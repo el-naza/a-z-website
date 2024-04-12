@@ -13,8 +13,31 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      fontFamily: {
+        sans: ["var(--font-anybody)", "var(--font-ubuntu)"],
+      },
+    },
+    colors: {
+      white: "#FEFEFE",
+      black: "#0C0C0C",
+      black2: "#413E3E",
+      primary: "#579797",
+      primary2: "#67B3C0",
+      secondary: "#FF6209",
+      tertiary: "#E6EA0F",
+      gray: "#AFAFAF",
+      "gray-blue": "#EDF3F3",
+      "gray-light": "#F3F3F3",
     },
   },
   plugins: [],
 };
 export default config;
+
+
+
+
+
+
+
+

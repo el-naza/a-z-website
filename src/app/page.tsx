@@ -2,112 +2,387 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <>
+      <header className="fixed w-screen py-[10px] border-b-2 border-gray-light bg-white z-10">
+        <div className="flex justify-between items-center max-w-[1280px] m-auto">
+          <Image
+            src="/logo.png"
+            alt="A-Z_NEW_widthAGE_TUTORS_-_LOGO"
+            width={82}
+            height={82}
+          />
+          <nav className="flex gap-[50px]">
+            <NavLink isActive={true}>Home</NavLink>
+            <NavLink>What we do</NavLink>
+            <NavLink>Our team</NavLink>
+            <NavLink>Testimonial</NavLink>
+            <NavLink>Blog</NavLink>
+            <NavLink>Contact us</NavLink>
+          </nav>
         </div>
-      </div>
+      </header>
+      <main>
+        <section className="w-[1280px] m-auto h-screen justify-between items-center flex">
+          <WordingItem className="w-[700px]">
+            <h1>
+              Is your Child struggling with{" "}
+              <span className="text-secondary">poor</span> grades?
+            </h1>
+            <div className="flex flex-col gap-[40px]">
+              <p>
+                Help Them Shine! Spark Their Potential with Personalized
+                Tutoring. 
+              </p>
+              <div className="flex gap-[48px]">
+                <Button>
+                  <h5 className="font-normal">Learn More</h5>
+                </Button>
+                <Button>
+                  <h5 className="font-normal">Consult Us</h5>
+                </Button>
+              </div>
+            </div>
+          </WordingItem>
+          <Image
+            alt="happy kid"
+            src="/happy-kid.svg"
+            // className="aspect-square rounded-full h-[200px]"
+            width={522.28}
+            height={490.94}
+          />
+        </section>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+        <section className="relative flex justify-between items-center max-w-[1271px] m-auto mb-[100px]">
+          <WordingItem className="w-[484px]">
+            <h3>
+              Empowering learners to succeed -{" "}
+              <h4 className="inline text-primary2">Why choose us?</h4>
+            </h3>
 
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
+            <p>
+              we provide a personalized learning experience that ignites a
+              passion for learning and helps students achieve their academic
+              goals.
+            </p>
+            <Button>
+              <h5 className="font-normal">Learn More</h5>
+            </Button>
+          </WordingItem>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
+          <Image
+            className="absolute left-[372px] top-[360px]"
+            src="/kite.png"
+            alt="certified"
+            width="72"
+            height="72"
+          />
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
+          <div>
+            <div className="flex gap-[20px] text-[16px] leading-[19.2px] mb-[20px] h-[234px]">
+              <ItemCard className="w-[292px] border-2 border-gray-light p-5 rounded-[32px] gap-[16px]">
+                <Image
+                  src="/proven-results.svg"
+                  alt="certified"
+                  width={60}
+                  height={56.36}
+                />
+                <h5 className="text-gray">Certified Tutor</h5>
+                <p>
+                  Our team comprises highly experieced educators who are
+                  passionate about students' success.
+                </p>
+              </ItemCard>
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+              <ItemCard className="w-[394px] border-2 border-gray-light p-5 rounded-[32px] gap-[16px]">
+                <Image
+                  src="/customized-learning-plans.svg"
+                  alt="rocket"
+                  width={60}
+                  height={56.36}
+                />
+                <h5 className="text-gray">Customized Learning Plans:</h5>
+                <p>
+                  We create personalized learning plans that address each
+                  student's specific strengths, weaknesses and goals.
+                </p>
+              </ItemCard>
+            </div>
+
+            <div className="flex gap-[20px] text-[16px] leading-[19.2px] h-[298px]">
+              <ItemCard className="w-[292px] border-2 border-gray-light p-5 rounded-[32px] gap-[40px]">
+                <Image
+                  src="/proven-results.svg"
+                  alt="proven"
+                  width={60}
+                  height={56.36}
+                />
+                <div className="flex flex-col gap-[16px]">
+                  <h5 className="text-gray">Proven Results</h5>
+                  <p>
+                    Our proven track record demonstrates a consistent record of
+                    improved grades, increased confidence, and a love for
+                    learning in our students.
+                  </p>
+                </div>
+              </ItemCard>
+
+              <ItemCard className="w-[394px] border-2 border-gray-light p-5 rounded-[32px] gap-[40px]">
+                <Image
+                  src="/customized-learning-plans.svg"
+                  alt="learning"
+                  width={60}
+                  height={56.36}
+                />
+                <div className="flex flex-col gap-[16px]">
+                  <h5 className="text-gray">Customized Learning Plans:</h5>
+                  <p>
+                    We create personalized learning plans that address each
+                    student's specific strengths, weaknesses and goals.
+                  </p>
+                </div>
+              </ItemCard>
+            </div>
+          </div>
+        </section>
+
+        <section className="flex gap-[54.73px] justify-center items-center">
+          <div className="w-[361.27px] h-[314px] relative">
+            <Image
+              className="bg-secondary rounded-[20px]"
+              src="/girl-with-glasses.png"
+              alt="A-Z_NEW_widthAGE_TUTORS_-_LOGO"
+              width={197.57}
+              height={240}
+            />
+
+            <Image
+              className="bg-tertiary rounded-[20px] absolute bottom-0 right-0"
+              src="/boy-with-glasses.png"
+              alt="A-Z_NEW_widthAGE_TUTORS_-_LOGO"
+              width={222.27}
+              height={270}
+            />
+          </div>
+          <WordingItem className="w-[584px]">
+            <h4>Our services are structured to help your child thrive</h4>
+            <p>
+              We offer a comprehensive range of tutoring services to support
+              your child's success. 
+            </p>
+            <Button>
+              <h5 className="font-normal">Learn More</h5>
+            </Button>
+          </WordingItem>
+        </section>
+
+        <section className="relative flex gap-[82px] pl-[150px] pt-[200px] pb-[170px] pr-[80px] items-center overflow-hidden">
+          <WordingItem className="w-[504px]">
+            <h4>
+              See what other learners & parents are saying about our services
+            </h4>
+            <p>
+              Unveiling the impact we've made on families.. Read what parents
+              are saying about their child's progress. 
+            </p>
+            <Button>
+              <h5 className="font-normal">See all testimonials</h5>
+            </Button>
+          </WordingItem>
+
+          <Image
+            className="absolute top-[170px] left-[690px] z-[-1]"
+            src="/star.png"
+            alt="star"
+            width="114"
+            height="114"
+          />
+
+          <div className="relative rounded-[10px] w-[617px] py-[44px] pl-[30px] bg-gray-blue flex gap-[25px] overflow-visible items-center">
+            <TestimonialCard
+              testimony="Lorem ipsum dolor sit amet consectetur. Tortor sit elementum sit ultrices nisl orci consectetur. Urna nunc facilisis urna laoreet blandit felis rutrum."
+              testifier="Tobi Nwafor"
+              role="Learner, A-Z New Age Tutors"
+              dpUrl="/boy-with-glasses.png"
+            />
+            <TestimonialCard
+              testimony="Lorem ipsum dolor sit amet consectetur. Tortor sit elementum sit ultrices nisl orci consectetur. Urna nunc facilisis urna laoreet blandit felis rutrum."
+              testifier="Tobi Nwafor"
+              role="Learner, A-Z New Age Tutors"
+              dpUrl="/boy-with-glasses.png"
+            />
+
+            <div className="absolute right-[15px] bg-primary2 w-[60px] aspect-square rounded-full flex items-center justify-center">
+              <Image src="/arrow.svg" alt="star" width={18.75} height={15.75} />
+            </div>
+          </div>
+        </section>
+      </main>
+    </>
   );
 }
+
+function ItemCard({
+  className,
+  children,
+  ...props
+}: Readonly<{
+  className?: string;
+  children?: React.ReactNode;
+}>) {
+  return (
+    <div className={`flex flex-col items-start ${className}`} {...props}>
+      {children}
+    </div>
+  );
+}
+
+function NavLink({
+  dropDown,
+  isActive,
+  children,
+  ...props
+}: Readonly<{
+  dropDown?: React.ReactNode;
+  isActive?: boolean;
+  children: React.ReactNode;
+}>) {
+  return (
+    <a className={isActive ? "font-[700]" : "text-gray"} href="#" {...props}>
+      {children}
+      {isActive && (
+        <div className="bg-black pt-[2px] h-[4px] w-full rounded-[30px]" />
+      )}
+    </a>
+  );
+}
+
+function Button({
+  children,
+  className,
+  ...props
+}: Readonly<{
+  children: React.ReactNode;
+  className?: string;
+}>) {
+  return (
+    <div
+      className={`rounded-[45px] px-[50px] py-[20px] bg-primary2 text-white ${className}`}
+      {...props}
+    >
+      {children}
+    </div>
+  );
+}
+
+function TestimonialCard({
+  testimony,
+  testifier,
+  role,
+  dpUrl,
+  className,
+  ...props
+}: Readonly<{
+  testimony: string;
+  testifier: string;
+  role: string;
+  dpUrl: string;
+  className?: string;
+}>) {
+  return (
+    <div
+      className={`rounded-[10px] px-[20px] py-[30px] bg-white text-[16px] leading-[19.2px] flex flex-col gap-[12px] min-w-[425px] ${className}`}
+      {...props}
+    >
+      <Image
+        className="mt-[12px]"
+        src="/quote-start.svg"
+        alt={'"'}
+        width={24}
+        height={38.4}
+      />
+      <div>{testimony}</div>
+      <div className="flex gap-[14px] items-center">
+        <Image
+          className="rounded-full h-[60px] aspect-square"
+          src={dpUrl}
+          alt="profile"
+          width={60}
+          height={60}
+        />
+        <div>
+          <div className="font-bold mb-[4px]">{testifier}</div>
+          <div>{role}</div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function WordingItem({
+  gapClass,
+  className,
+  children,
+  ...props
+}: Readonly<{
+  gapClass?: string;
+  className?: string;
+  children?: React.ReactNode;
+}>) {
+  return (
+    <div
+      className={`flex flex-col ${
+        gapClass || "gap-[30px]"
+      } items-start ${className}`}
+      {...props}
+    >
+      {children}
+    </div>
+  );
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

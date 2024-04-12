@@ -8,7 +8,7 @@
   --background-end-rgb: 255, 255, 255;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
@@ -16,14 +16,23 @@
   }
 }
 
+*/
+
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  /* color: rgb(var(--foreground-rgb)); */
+  font-family: var(--font-ubuntu);
+  color: #413e3e;
+  background:
+  /* linear-gradient(
+    to bottom,
+    transparent,
+    */ rgb(
+    var(--background-end-rgb)
+  );
+  /* )
+      rgb(var(--background-start-rgb)); */
+  font-size: 20px;
+  line-height: 24px;
 }
 
 @layer utilities {
@@ -31,3 +40,39 @@ body {
     text-wrap: balance;
   }
 }
+
+h1 {
+  font-family: var(--font-anybody);
+  font-weight: bold;
+  font-size: 54px;
+  line-height: 76.8px;
+}
+
+h2 {
+  font-family: var(--font-anybody);
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 57.6px;
+}
+
+h3 {
+  font-family: var(--font-anybody);
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 48px;
+}
+
+h4 {
+  font-family: var(--font-anybody);
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 38.4px;
+}
+
+h5 {
+  /* font-family: var(--font-anybody); */
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28.8px;
+}
+
