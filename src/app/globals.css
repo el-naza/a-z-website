@@ -76,3 +76,21 @@ h5 {
   line-height: 28.8px;
 }
 
+.tiny {
+  font-size: 16px;
+  line-height: 19.2px;
+}
+
+.copyright {
+  font-family: var(--font-roboto);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 0%;
+}
+
+.newsletter-email {
+  font-family: var(--font-roboto);
+  font-weight: 500;
+  font-size: 20px;
+  /* line-height: 21.5px; */
+}

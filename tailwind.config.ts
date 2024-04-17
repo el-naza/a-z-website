@@ -26,18 +26,10 @@ const config: Config = {
       secondary: "#FF6209",
       tertiary: "#E6EA0F",
       gray: "#AFAFAF",
+      gray2: "#F3F3F3",
       "gray-blue": "#EDF3F3",
-      "gray-light": "#F3F3F3",
     },
   },
   plugins: [],
 };
 export default config;
-
-
-
-
-
-
-
-

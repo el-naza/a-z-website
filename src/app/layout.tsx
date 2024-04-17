@@ -1,10 +1,17 @@
 import type { Metadata } from "next";
-import { Anybody, Ubuntu } from "next/font/google";
+import { Anybody, Ubuntu, Roboto } from "next/font/google";
 import "./globals.css";
 
 const anybody = Anybody({
   subsets: ["latin"],
   variable: "--font-anybody",
+  display: "swap",
+});
+
+const roboto = Roboto({
+  subsets: ["latin"],
+  weight: ["500"],
+  variable: "--font-roboto",
   display: "swap",
 });
 
@@ -27,28 +34,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${anybody.variable} ${ubuntu.variable}`}>
+      <body
+        className={`${anybody.variable} ${ubuntu.variable} ${roboto.variable}`}
+      >
         {children}
       </body>
     </html>
   );
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
