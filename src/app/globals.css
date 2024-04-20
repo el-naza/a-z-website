@@ -38,6 +38,11 @@ body {
   }
 }
 
+ul {
+  list-style: outside;
+  padding-left: 35px;
+}
+
 h1 {
   font-family: var(--font-anybody);
   font-weight: bold;

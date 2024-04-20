@@ -54,20 +54,17 @@ export default function RootLayout({
                 <NavLink href="/">Home</NavLink>
                 <div className="group relative cursor-pointer">
                   <span className="text-gray">What we do</span>
-                  <div
-                    className="absolute invisible flex flex-wrap w-[804px] bg-white p-[18px] rounded-[16px] left-[-13px]  gap-y-[12px] justify-between group-hover:visible hover:visible"
-                    style={{ boxShadow: "0px 0px 30px 0px #0000001A" }}
-                  >
-                    <WhatWeDo title="One-on-one private tutoring" />
-                    <WhatWeDo title="One-on-one private tutoring" />
-                    <WhatWeDo title="One-on-one private tutoring" />
-                    <WhatWeDo title="One-on-one private tutoring" />
-                    <WhatWeDo title="One-on-one private tutoring" />
-                    <WhatWeDo title="One-on-one private tutoring" />
-                    <WhatWeDo title="One-on-one private tutoring" />
-                    <WhatWeDo title="One-on-one private tutoring" />
-                    <WhatWeDo title="One-on-one private tutoring" />
-                    <WhatWeDo title="One-on-one private tutoring" />
+                  <div className="absolute invisible flex flex-wrap w-[804px] bg-white p-[18px] rounded-[16px] left-[-13px]  gap-y-[12px] justify-between group-hover:visible hover:visible shadow-[0px_0px_30px_0px_#0000001A]">
+                    <WhatWeDoMenuItem title="One-on-one private tutoring" />
+                    <WhatWeDoMenuItem title="Home Schooling" />
+                    <WhatWeDoMenuItem title="Core subjects for all grades" />
+                    <WhatWeDoMenuItem title="Montessori and EYFS Education" />
+                    <WhatWeDoMenuItem title="SAT, IGCSE, IELTS exams" />
+                    <WhatWeDoMenuItem title="WAEC, JAMB AND NECO (GCE)" />
+                    <WhatWeDoMenuItem title="Coding for kids and teens" />
+                    <WhatWeDoMenuItem title="Special Needs Education" />
+                    <WhatWeDoMenuItem title="Nigerian Languages" />
+                    <WhatWeDoMenuItem title="French Language" />
                   </div>
                 </div>
                 <NavLink href="/our-team">Our team</NavLink>
@@ -156,7 +153,7 @@ export default function RootLayout({
   );
 }
 
-function WhatWeDo({
+function WhatWeDoMenuItem({
   title,
 }: Readonly<{
   title: string;
@@ -168,7 +165,7 @@ function WhatWeDo({
       className="flex gap-[30px] p-[20px] items-center max-w-[384px] rounded-[20px] hover:shadow-[0px_0px_3.5px_0px_#00000033]"
     >
       <Image
-        src={`/${path}.png`}
+        src={`/what-we-do/${path}.png`}
         alt="A-Z_NEW_widthAGE_TUTORS_-_LOGO"
         width={90}
         height={90}
@@ -183,3 +180,4 @@ function WhatWeDo({
     </Link>
   );
 }
+

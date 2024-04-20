@@ -1,14 +1,10 @@
 /* eslint-disable react/no-unescaped-entities */
 import Image from "next/image";
-import Link, { LinkProps } from "next/link";
-import { usePathname } from "next/navigation";
-import {
-  AnchorHTMLAttributes,
-  InputHTMLAttributes,
-  LinkHTMLAttributes,
-  TextareaHTMLAttributes,
-} from "react";
-import { Url } from "url";
+import { InputHTMLAttributes, ReactNode, TextareaHTMLAttributes } from "react";
+
+export function li({ children }: Readonly<{ children: ReactNode }>) {
+  return <li>{children}</li>;
+}
 
 export function ConsultUs() {
   return (
@@ -251,3 +247,8 @@ export function WordingItem({
     </div>
   );
 }
+
+
+
+
+

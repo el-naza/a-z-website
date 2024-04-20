@@ -47,14 +47,69 @@ export default function WhatWeDoLayout({
             {routeTitle[pathName.split("/").at(-1)!]}
           </h1>
         </div>
-        <div>{children}</div>
+        <article>{children}</article>
       </section>
 
-      <div className="max-w-[544px] m-auto mt-[60px] mb-[150px] rounded-[50px] h-[100px] flex items-center justify-center leading-none border-primary2 border-[2px] text-primary2 bg-white text-[24px]">
-        <span className="py-[15.5px]">Consult Us</span>
+      <div className="max-w-[544px] m-auto mt-[60px] mb-[150px] rounded-full h-[100px] leading-none p-[4px] pr-[4.5px] [background-image:linear-gradient(180deg,_#50E4ED_0%,_#3492D6_100%)] text-primary2 bg-white text-[24px]">
+        <span className="h-full w-full rounded-full  bg-white flex items-center justify-center">
+          <span className="[background-image:linear-gradient(180deg,_#50E4ED_0%,_#3492D6_100%)] text-[transparent] bg-clip-text">
+            Consult Us
+          </span>
+        </span>
       </div>
       <Faqs />
       <ConsultUs />
     </>
   );
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
