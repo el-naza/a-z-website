@@ -3,48 +3,122 @@ import { ReactNode } from "react";
 
 export default function OneOnOneHomeTutoring() {
   return (
-    <div>
-      Unlike a traditional classroom setting, our one-on-one home tutoring
-      sessions provide your child with the undivided focus they deserve. Our
-      experienced and passionate tutors take the time to understand your child's
-      unique learning style, strengths, and areas needing improvement. They then
-      create a customized learning plan that caters to their individual needs,
-      ensuring a clear path to academic success.
-      <h4>Benefits of Home Tutoring:</h4>
-      <li>
-        Comfort and Convenience: Eliminate the stress of traveling. Our tutors
-        come directly to the comfort of your home, creating a familiar and
-        relaxed learning environment.
-      </li>
-      <li>
-        Flexible Scheduling: We understand that every family has a busy
-        schedule. That's why we offer flexible scheduling options to fit your
-        needs, ensuring tutoring seamlessly integrates into your life.
-      </li>
-      <li>
-        Distraction-Free Zone: Away from classroom distractions, your child can
-        focus intently on the material at hand. This allows for deeper
-        understanding, improved retention, and a more productive learning
-        experience.
-      </li>
-      <h4>Proven Results, Lasting Impact:</h4>
-      <p>
-        Our personalized approach and one-on-one attention have a proven track
-        record of achieving exceptional results. We've helped countless students
-        improve their grades, gain confidence in their abilities, and develop a
-        love for learning.
-      </p>
-      <p>Ready to unlock your child's full potential?</p>
-      <p>
-        Contact us today for a free consultation! Let's discuss your child's
-        specific needs and how our one-on-one home tutoring programs can help
-        them achieve academic success.
-      </p>
-    </div>
+    <>
+      In today's digital world, coding is more than just a technical skill –
+      it's a superpower! At A-Z New Age Tutors, we ignite a passion for coding
+      in kids and teens, empowering them to become creators, problem-solvers,
+      and innovators of tomorrow.
+      <br />
+      <br />
+      <h4>Why Choose Us?</h4>
+      <br />
+      <ul>
+        <li>
+          <strong>Fun and Engaging:</strong> We make learning code an exciting
+          adventure through interactive games, animations, and real-world
+          projects that spark curiosity and keep young minds engaged.
+          <br />
+          <br />
+        </li>
+        <li>
+          <strong>Age-Appropriate Learning:</strong> Our programs are designed
+          for all levels, from complete beginners to aspiring coders. We cater
+          to the specific needs and interests of each age group.
+          <br />
+          <br />
+        </li>
+        <li>
+          <strong>Building Blocks of Success:</strong> We teach kids and teens
+          the fundamental coding concepts and languages they need to create
+          their own games, apps, websites, and more.
+          <br />
+          <br />
+        </li>
+        <li>
+          <strong>Develop Essential Skills:</strong> Coding goes beyond
+          programming. Our courses nurture critical thinking, problem-solving,
+          creativity, collaboration, and communication skills – valuable assets
+          for any future path.
+          <br />
+          <br />
+        </li>
+        <li>
+          <strong>Experienced Instructors:</strong> Our passionate and qualified
+          instructors provide expert guidance, support, and encouragement every
+          step of the way.
+          <br />
+          <br />
+        </li>
+      </ul>
+      <h4>Watch Your Child Thrive:</h4>
+      <br />
+      <ul>
+        <li>
+          <strong>Boost Confidence:</strong> As kids master new coding skills,
+          their confidence and sense of accomplishment soar.
+          <br />
+          <br />
+        </li>
+        <li>
+          <strong>Embrace Challenges:</strong> We encourage creative
+          problem-solving, fostering a love of learning and perseverance.
+          <br />
+          <br />
+        </li>
+        <li>
+          <strong>Prepare for the Future:</strong> Coding skills are becoming
+          increasingly sought-after in all fields. We give your child a head
+          start on a bright future.
+          <br />
+          <br />
+        </li>
+      </ul>
+      <h4>We Offer a Variety of Coding Programs:</h4>
+      <br />
+      <ul>
+        <li>
+          <strong>Beginner Courses:</strong> Introduce the basics of coding
+          through interactive games and activities.
+          <br />
+          <br />
+        </li>
+        <li>
+          <strong>Game Development:</strong> Learn to create engaging and
+          exciting games, sparking creativity and imagination.
+          <br />
+          <br />
+        </li>
+        <li>
+          <strong>App Development:</strong> Unleash their inner entrepreneur by
+          building functional and user-friendly apps.
+          <br />
+          <br />
+        </li>
+        <li>
+          <strong>Web Development:</strong> Delve into the world of websites,
+          learning how to design and develop interactive web pages.
+          <br />
+          <br />
+        </li>
+        <li>
+          <strong>Advanced Courses:</strong> Challenge experienced coders with
+          complex projects and cutting-edge languages.
+          <br />
+          <br />
+        </li>
+      </ul>
+      Investing in coding education is an investment in your child's future.
+      <br />
+      <br />
+      <h4>Ready to unlock their potential?</h4>
+      <br />
+      Contact us today to explore our coding programs and find the perfect fit
+      for your child's age, interests, and skill level! Let's embark on this
+      exciting coding adventure together!
+    </>
   );
 }
 
 function li({ children }: Readonly<{ children: ReactNode }>) {
   return <li>{children}</li>;
 }
-

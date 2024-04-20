@@ -1,50 +1,100 @@
 /* eslint-disable react/no-unescaped-entities */
 import { ReactNode } from "react";
 
-export default function OneOnOneHomeTutoring() {
+export default function NigerianLanguages() {
   return (
-    <div>
-      Unlike a traditional classroom setting, our one-on-one home tutoring
-      sessions provide your child with the undivided focus they deserve. Our
-      experienced and passionate tutors take the time to understand your child's
-      unique learning style, strengths, and areas needing improvement. They then
-      create a customized learning plan that caters to their individual needs,
-      ensuring a clear path to academic success.
-      <h4>Benefits of Home Tutoring:</h4>
-      <li>
-        Comfort and Convenience: Eliminate the stress of traveling. Our tutors
-        come directly to the comfort of your home, creating a familiar and
-        relaxed learning environment.
-      </li>
-      <li>
-        Flexible Scheduling: We understand that every family has a busy
-        schedule. That's why we offer flexible scheduling options to fit your
-        needs, ensuring tutoring seamlessly integrates into your life.
-      </li>
-      <li>
-        Distraction-Free Zone: Away from classroom distractions, your child can
-        focus intently on the material at hand. This allows for deeper
-        understanding, improved retention, and a more productive learning
-        experience.
-      </li>
-      <h4>Proven Results, Lasting Impact:</h4>
-      <p>
-        Our personalized approach and one-on-one attention have a proven track
-        record of achieving exceptional results. We've helped countless students
-        improve their grades, gain confidence in their abilities, and develop a
-        love for learning.
-      </p>
-      <p>Ready to unlock your child's full potential?</p>
-      <p>
-        Contact us today for a free consultation! Let's discuss your child's
-        specific needs and how our one-on-one home tutoring programs can help
-        them achieve academic success.
-      </p>
-    </div>
+    <>
+      <h4>Ignite a Love of Learning: Nigerian Languages for All Ages</h4>
+      <br />
+      Nigeria's vibrant tapestry of languages offers a wealth of cultural
+      richness and opens doors to communication and connection. At A-Z New Age
+      Tutors, we believe everyone deserves the opportunity to explore this
+      linguistic treasure trove. That's why we offer engaging Nigerian language
+      programs designed to ignite a love of learning in both children and
+      adults!
+      <br />
+      <br />
+      <h4>For Kids:</h4>
+      <br />
+      <ul>
+        <li>
+          <strong>Spark Curiosity:</strong> Our fun and interactive classes
+          introduce children to the sounds, rhythms, and basic vocabulary of
+          Nigerian languages in a playful and engaging way.
+          <br />
+          <br />
+        </li>
+        <li>
+          <strong>Nurture Cultural Identity:</strong> Learning a Nigerian
+          language allows children to connect with their heritage, explore
+          family traditions, and celebrate Nigerian culture.
+          <br />
+          <br />
+        </li>
+        <li>
+          <strong>Boost Cognitive Development:</strong> Studies show that
+          learning a new language enhances memory, problem-solving skills, and
+          overall brainpower.
+          <br />
+        </li>
+      </ul>
+      <br />
+      <h4>For Adults:</h4>
+      <br />
+      <ul>
+        <li>
+          <strong>Reclaim Your Roots:</strong> Reconnect with your family's
+          history and gain a deeper understanding of your heritage.
+          <br />
+          <br />
+        </li>
+        <li>
+          <strong>Unlock Opportunities:</strong> Enhance your communication
+          skills for travel, work, or simply conversing with friends and family
+          in Nigeria.
+          <br />
+          <br />
+        </li>
+        <li>
+          <strong>Embrace a Challenge:</strong> Learning a new language is a
+          rewarding experience that keeps your mind sharp and opens doors to new
+          possibilities.
+          <br />
+          <br />
+        </li>
+      </ul>
+      <h4>We Offer Something for Everyone:</h4>
+      <br />
+      <ul>
+        <li>
+          <strong>A variety of Nigerian languages:</strong> Choose from popular
+          languages like Igbo, Hausa, and Yoruba, or explore other options.
+          <br />
+          <br />
+        </li>
+        <li>
+          <strong>Flexible learning options:</strong> We offer online and
+          in-person classes to fit your schedule and learning style.
+          <br />
+          <br />
+        </li>
+        <li>
+          <strong>Experienced instructors:</strong> Our passionate and qualified
+          teachers, many of whom are native speakers, will guide you on your
+          language learning journey.
+          <br />
+          <br />
+        </li>
+      </ul>
+      Investing in learning a Nigerian language is an investment in yourself and
+      your family's future. Ready to embark on this exciting adventure together?
+      Contact us today to discuss your language learning goals and find the
+      perfect program for you or your child! Let's celebrate the beauty and
+      diversity of Nigerian languages!{" "}
+    </>
   );
 }
 
 function li({ children }: Readonly<{ children: ReactNode }>) {
   return <li>{children}</li>;
 }
-
