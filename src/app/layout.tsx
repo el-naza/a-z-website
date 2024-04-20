@@ -1,6 +1,10 @@
 import type { Metadata } from "next";
 import { Anybody, Ubuntu, Roboto } from "next/font/google";
 import "./globals.css";
+import { NavLink } from "./components/NavLink";
+import Image from "next/image";
+import { HTMLAttributes } from "react";
+import Link from "next/link";
 
 const anybody = Anybody({
   subsets: ["latin"],
@@ -35,10 +39,147 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${anybody.variable} ${ubuntu.variable} ${roboto.variable}`}
+        className={`${anybody.variable} ${ubuntu.variable} ${roboto.variable} ${ubuntu.className} text-[24px] leading-[28.8px]`}
       >
-        {children}
+        <header className="h-[102px]">
+          <div className="fixed w-[100%] py-[10px] border-b-2 border-gray2 bg-white z-10">
+            <div className="flex justify-between items-center max-w-[1116px] m-auto">
+              <Image
+                src="/logo.png"
+                alt="A-Z_NEW_widthAGE_TUTORS_-_LOGO"
+                width={82}
+                height={82}
+              />
+              <nav className="flex gap-[50px]">
+                <NavLink href="/">Home</NavLink>
+                <div className="group relative cursor-pointer">
+                  <span className="text-gray">What we do</span>
+                  <div
+                    className="absolute invisible flex flex-wrap w-[804px] bg-white p-[18px] rounded-[16px] left-[-13px]  gap-y-[12px] justify-between group-hover:visible hover:visible"
+                    style={{ boxShadow: "0px 0px 30px 0px #0000001A" }}
+                  >
+                    <WhatWeDo title="One-on-one private tutoring" />
+                    <WhatWeDo title="One-on-one private tutoring" />
+                    <WhatWeDo title="One-on-one private tutoring" />
+                    <WhatWeDo title="One-on-one private tutoring" />
+                    <WhatWeDo title="One-on-one private tutoring" />
+                    <WhatWeDo title="One-on-one private tutoring" />
+                    <WhatWeDo title="One-on-one private tutoring" />
+                    <WhatWeDo title="One-on-one private tutoring" />
+                    <WhatWeDo title="One-on-one private tutoring" />
+                    <WhatWeDo title="One-on-one private tutoring" />
+                  </div>
+                </div>
+                <NavLink href="/our-team">Our team</NavLink>
+                <NavLink href="/#testimonials">Testimonials</NavLink>
+                <NavLink href="/career">Career</NavLink>
+                <NavLink href="/contact-us">Contact us</NavLink>
+              </nav>
+            </div>
+          </div>
+        </header>
+        <main>{children}</main>
+        <footer>
+          <section className="bg-black pt-[97px] pb-[70px] text-white">
+            <div className="flex justify-between max-w-[1071px] m-auto">
+              <div className="flex flex-col max-w-[431px]">
+                <h4 className="mb-[16px]">Sign-up for our newsletter</h4>
+                <p className="pb-[52px] text-gray">
+                  Get exclusive educational{" "}
+                  <span className="text-white">tips and updates</span> straight
+                  to your mailbox.
+                </p>
+                <div className="pl-[30px] h-[55.54px] flex bg-white self-start">
+                  <Image src="/email.svg" alt="email" width={24} height={24} />
+                  <input
+                    type="email"
+                    placeholder="Email address"
+                    className="newsletter-email text-black tracking-[0.12em] placeholder:text-black2 ml-[12px] pl-[12px]"
+                  />
+                  <div className="bg-primary py-[19.89px] px-[32.62px]">
+                    <Image
+                      src="/arrow.svg"
+                      alt="send"
+                      width={18.75}
+                      height={15.75}
+                    />
+                  </div>
+                </div>
+              </div>
+              <div className="flex flex-col gap-[28.8px] text-gray">
+                <a href="" className="font-bold text-white">
+                  About
+                </a>
+                <a href="">Our Team</a>
+                <a href="">Blog</a>
+                <a href="">Our services</a>
+              </div>
+              <div className="flex flex-col gap-[28.8px] text-gray">
+                <a href="" className="font-bold text-white">
+                  Company
+                </a>
+                <a href="">Career</a>
+                <a href="">Our team</a>
+                <a href="">Contact</a>
+              </div>
+            </div>
+          </section>
+          <section className="pt-[23.46px] pb-[22.54px] flex flex-col items-center gap-[7px]">
+            <div className="flex gap-[28px]">
+              <Image
+                src="/facebook.svg"
+                alt="facebook"
+                width={40}
+                height={40}
+              />
+              <Image src="/x.svg" alt="x" width={40} height={40} />
+              <Image
+                src="/instagram.svg"
+                alt="instagram"
+                width={40}
+                height={40}
+              />
+            </div>
+            <div className="flex gap-[4.5px] copyright items-center tracking-[0.12em]">
+              <Image
+                src="/copyright.svg"
+                alt="copyright"
+                width={20}
+                height={20}
+              />
+              2023 | A-Z New Age Tutors
+            </div>
+          </section>
+        </footer>
       </body>
     </html>
+  );
+}
+
+function WhatWeDo({
+  title,
+}: Readonly<{
+  title: string;
+}>) {
+  const path = title.replaceAll(" ", "-").toLowerCase();
+  return (
+    <Link
+      href={`/what-we-do/${path}`}
+      className="flex gap-[30px] p-[20px] items-center max-w-[384px] rounded-[20px] hover:shadow-[0px_0px_3.5px_0px_#00000033]"
+    >
+      <Image
+        src={`/${path}.png`}
+        alt="A-Z_NEW_widthAGE_TUTORS_-_LOGO"
+        width={90}
+        height={90}
+        className="rounded-[12px] h-[90px] aspect-square"
+      />
+      <div>
+        <div className={`${anybody.className} mb-[2px]`}>
+          <span className="font-bold">{title}</span>
+        </div>
+        <span className="tiny text-primary2">Learn More</span>
+      </div>
+    </Link>
   );
 }
