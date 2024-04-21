@@ -58,10 +58,10 @@ export default function WhatWeDoLayout({
         </span>
       </div>
       <Faqs />
-      <ConsultUs />
     </>
   );
 }
+
 
 
 

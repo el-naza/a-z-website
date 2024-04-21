@@ -5,6 +5,7 @@ import { NavLink } from "./components/NavLink";
 import Image from "next/image";
 import { HTMLAttributes } from "react";
 import Link from "next/link";
+import { ConsultUs } from "./components";
 
 const anybody = Anybody({
   subsets: ["latin"],
@@ -76,6 +77,7 @@ export default function RootLayout({
           </div>
         </header>
         <main>{children}</main>
+        <ConsultUs />
         <footer>
           <section className="bg-black pt-[97px] pb-[70px] text-white">
             <div className="flex justify-between max-w-[1071px] m-auto">
@@ -180,4 +182,6 @@ function WhatWeDoMenuItem({
     </Link>
   );
 }
+
+
 
