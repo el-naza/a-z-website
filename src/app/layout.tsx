@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Anybody, Ubuntu, Roboto } from "next/font/google";
+import { Anybody, Ubuntu, Roboto, Inter } from "next/font/google";
 import "./globals.css";
 import { NavLink } from "./components/NavLink";
 import Image from "next/image";
@@ -10,6 +10,12 @@ import { ConsultUs } from "./components";
 const anybody = Anybody({
   subsets: ["latin"],
   variable: "--font-anybody",
+  display: "swap",
+});
+
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
   display: "swap",
 });
 
@@ -40,7 +46,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${anybody.variable} ${ubuntu.variable} ${roboto.variable} ${ubuntu.className} text-[24px] leading-[28.8px]`}
+        className={`${anybody.variable} ${ubuntu.variable} ${roboto.variable} ${inter.variable} ${ubuntu.className} text-[24px] leading-[28.8px]`}
       >
         <header className="h-[102px]">
           <div className="fixed w-[100%] py-[10px] border-b-2 border-gray2 bg-white z-10">
@@ -184,10 +190,3 @@ function WhatWeDoMenuItem({
     </Link>
   );
 }
-
-
-
-
-
-
-

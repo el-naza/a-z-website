@@ -8,21 +8,13 @@ export function li({ children }: Readonly<{ children: ReactNode }>) {
 
 export function ConsultUs() {
   return (
-    <div
-      className="flex bg-white gap-[60px] m-auto mb-[147px] max-w-[1010px] px-[40px] py-[32px] rounded-[74px] items-center"
-      style={{
-        boxShadow: "0px 1px 22.8px 0px #00000012",
-      }}
-    >
+    <div className="flex bg-white gap-[60px] m-auto mb-[147px] max-w-[1010px] px-[40px] py-[32px] rounded-[74px] items-center shadow-[0px_1px_22.8px_0px_#00000012]">
       <Image
         src="/customer-care-rep.png"
         alt="customer care representative"
         width={272}
         height={620}
-        className="rounded-[700px]"
-        style={{
-          boxShadow: "0px 0px 42.1px 0px #0000001A",
-        }}
+        className="rounded-[700px] shadow-[0px_0px_42.1px_0px_#0000001A]"
       />
       <div className="flex-1">
         <p className="font-anybody bg-gradient-to-r from-[#50E4ED] to-[#3492D6] text-[transparent] bg-clip-text text-[64px] leading-[76.8px] mb-[4px]">
@@ -247,14 +239,3 @@ export function WordingItem({
     </div>
   );
 }
-
-
-
-
-
-
-
-
-
-
-

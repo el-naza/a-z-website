@@ -1,7 +1,8 @@
+/* eslint-disable react/no-unescaped-entities */
 import Image from "next/image";
 import { CallToApply } from "../components";
 
-export default function () {
+export default function OurTeam() {
   return (
     <>
       <Image
@@ -14,7 +15,7 @@ export default function () {
       <div className="max-w-[1010px] m-auto mt-[107px] mb-[92px]">
         <h2 className="mb-[16px]">
           Say hello to our team
-          <span className="ml-[59.275px] text-[72.45px] w-[159px] text-center leading-[159px]">
+          <span className="ml-[59.275px] text-[72.45px] w-[159px] text-center leading-[159px] font-inter">
             👋
           </span>
         </h2>
@@ -95,4 +96,3 @@ function TeamMemberCard({
     </div>
   );
 }
-

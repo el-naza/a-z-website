@@ -1,84 +1,122 @@
 /* eslint-disable react/no-unescaped-entities */
+import Image from "next/image";
 import { ReactNode } from "react";
+import { CustomButton } from "../components";
 
-export default function OneOnOneHomeTutoring() {
+export default function Career() {
   return (
     <>
-      <h4>
-        Embrace the World with French: Unlock a Language of <br />
-        Culture and Opportunity
-      </h4>
-      <br />
-      The French language isn't just beautiful to hear, it's a gateway to a rich
-      culture, vibrant history, and exciting opportunities. Here at A-Z New Age
-      Tutors, we invite you to embark on a journey of French language learning:
-      <br />
-      <br />
-      <ul>
-        <li>
-          <strong>Expand Your Horizons: </strong>French is spoken by over 300
-          million people worldwide, opening doors to travel, study, and work in
-          a multitude of countries.
-          <br />
-          <br />
-        </li>
-        <li>
-          <strong>Expand Your Horizons: </strong>Learning French unlocks a
-          treasure trove of literature, cinema, music, and art. Gain a deeper
-          appreciation for French culture and connect with French-speaking
-          communities around the globe.
-          <br />
-          <br />
-        </li>
-        <li>
-          <strong>Expand Your Horizons: </strong>Studies show that learning a
-          new language like French enhances cognitive skills, memory, and
-          problem-solving abilities.
-          <br />
-          <br />
-        </li>
-      </ul>
-      <h4>We Offer Something for Everyone:</h4>
-      <br />
-      Whether you're a complete beginner or looking to refine your existing
-      skills, we have a French language program for you:
-      <br />
-      <br />
-      <ul>
-        <li>
-          <strong>Engaging Classes: </strong>Our interactive classes, led by
-          passionate native speakers, make learning French fun and effective.
-          <br />
-          <br />
-        </li>
-        <li>
-          <strong>Engaging Classes: </strong>We prioritize communication skills,
-          ensuring you can confidently speak and understand French in everyday
-          situations.
-          <br />
-          <br />
-        </li>
-        <li>
-          <strong>Engaging Classes: </strong>Choose from a variety of class
-          schedules and formats, including online courses, in-person classes,
-          and private tutoring, to fit your busy lifestyle.
-          <br />
-          <br />
-        </li>
-      </ul>
-      <h4>Investing in Your Future:</h4>
-      <br />
-      Learning French is an investment in yourself. It opens doors to academic
-      pursuits, career opportunities, and personal growth.
-      <br />
-      <br />
-      Ready to embark on your French language adventure?
-      <br />
-      <br />
-      Contact us today to learn more about our comprehensive French language
-      programs and find the perfect fit for your goals! Let's unlock the world
-      of French language together.
-      <br />{" "}
+      <section className="relative">
+        <Image
+          width={1440}
+          height={343}
+          src="/career-people.png"
+          alt="career people"
+          className="mb-[42px] bg-black"
+        />
+        <h2 className="absolute top-0 bottom-0 left-0 right-0 text-white flex justify-center items-center">
+          Join our team
+        </h2>
+      </section>
+      <section className="m-auto w-[1116px] mb-[100px]">
+        At A-Z New Age Tutors, we're dedicated to empowering students of all
+        ages to achieve their academic goals. We believe in fostering a
+        supportive and collaborative learning environment where both students
+        and instructors can thrive.
+        <br />
+        <br />
+        <h4>Why Join Us</h4>
+        <br />
+        <ul>
+          <li>
+            <strong>Make a real difference: </strong>Join a team dedicated to
+            empowering learners and transforming lives through education. Your
+            contributions will directly impact student success stories.
+            <br />
+            <br />
+          </li>
+          <li>
+            <strong>Invest in your future: </strong>We believe in nurturing
+            talent. We offer opportunities for professional development,
+            skill-building workshops, and mentorship programs to help you grow
+            your career.
+            <br />
+            <br />
+          </li>
+          <li>
+            <strong>Be part of something special: </strong>We foster a
+            collaborative and supportive work culture where colleagues become
+            friends. You'll feel valued, respected, and empowered to do your
+            best work.
+            <br />
+            <br />
+          </li>
+          <li>
+            <strong>Rewarding compensation: </strong> We offer a competitive
+            salary and benefits package to recognize your talent and
+            contributions. Enjoy work-life balance with flexible work options
+            (if applicable).
+            <br />
+            <br />
+          </li>
+        </ul>
+        We encourage you to submit your resume and cover letter below:
+      </section>
+      <section className="m-auto w-[1147px] p-[16px] bg-gray-blue flex flex-col gap-[50px] mb-[256px] rounded-[12px]">
+        <div className="h-[71px] flex items-center justify-between">
+          <h4>Apply</h4>
+        </div>
+        <div className="text-[20px] leading-[24px] flex flex-col w-[736px] items-start">
+          <strong>Full Name</strong>
+          <input
+            placeholder="Enter Your Full Name"
+            type="text"
+            className="mt-[16px] mb-[40px] rounded-[4px] px-4 py-5 shadow-[0px_0px_3px_0px_#00000033] w-full"
+          />
+          <strong>Email Address</strong>
+          <input
+            placeholder="@email address"
+            type="email"
+            className="mt-[16px] mb-[40px] rounded-[4px] px-4 py-5 shadow-[0px_0px_3px_0px_#00000033] w-full"
+          />
+          <div className="tiny flex flex-col gap-10 mb-10">
+            <div>
+              <button className="p-[12px] bg-white flex gap-[16px] items-center mb-[7px] rounded-[8px]">
+                <Image
+                  src="/upload.svg"
+                  width={16}
+                  height={16}
+                  alt="upload icon"
+                  className="aspect-square"
+                />
+                Upload Resume
+              </button>
+              <ul className="text-gray flex flex-col gap-1">
+                <li>Resume size must not be more than 5MB</li>
+                <li>Upload only portable document formats (PDF)</li>
+              </ul>
+            </div>
+            <div>
+              <button className="p-[12px] bg-white flex gap-[16px] items-center mb-[7px] rounded-[8px]">
+                <Image
+                  src="/upload.svg"
+                  width={16}
+                  height={16}
+                  alt="upload icon"
+                  className="aspect-square"
+                />
+                Upload application letter
+              </button>
+              <ul className="text-gray flex flex-col gap-1">
+                <li>Application letter size must not be more than 5MB</li>
+                <li>Upload only portable document formats (PDF)</li>
+              </ul>
+            </div>
+          </div>
+
+          <CustomButton>Submit</CustomButton>
+        </div>
+      </section>
     </>
   );
 }
@@ -86,4 +124,3 @@ export default function OneOnOneHomeTutoring() {
 function li({ children }: Readonly<{ children: ReactNode }>) {
   return <li>{children}</li>;
 }
-

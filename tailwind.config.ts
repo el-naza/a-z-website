@@ -16,6 +16,7 @@ const config: Config = {
       fontFamily: {
         anybody: "var(--font-anybody)",
         ubuntu: "var(--font-ubuntu)",
+        inter: "var(--font-inter)",
       },
     },
     colors: {
@@ -34,8 +35,3 @@ const config: Config = {
   plugins: [],
 };
 export default config;
-
-
-
-
-
