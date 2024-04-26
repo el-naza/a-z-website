@@ -120,7 +120,3 @@ export default function Career() {
     </>
   );
 }
-
-function li({ children }: Readonly<{ children: ReactNode }>) {
-  return <li>{children}</li>;
-}

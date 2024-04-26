@@ -88,8 +88,3 @@ export default function OneOnOneHomeTutoring() {
     </>
   );
 }
-
-function li({ children }: Readonly<{ children: ReactNode }>) {
-  return <li>{children}</li>;
-}
-

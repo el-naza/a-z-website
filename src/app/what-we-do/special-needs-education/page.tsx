@@ -75,7 +75,3 @@ export default function SpecialNeedsEducation() {
     </>
   );
 }
-
-function li({ children }: Readonly<{ children: ReactNode }>) {
-  return <li>{children}</li>;
-}

@@ -94,7 +94,3 @@ export default function NigerianLanguages() {
     </>
   );
 }
-
-function li({ children }: Readonly<{ children: ReactNode }>) {
-  return <li>{children}</li>;
-}

@@ -1,89 +1,71 @@
 /* eslint-disable react/no-unescaped-entities */
+import Image from "next/image";
 import { ReactNode } from "react";
 
 export default function OneOnOneHomeTutoring() {
   return (
     <>
-      <h4>
-        Embrace the World with French: Unlock a Language of <br />
-        Culture and Opportunity
-      </h4>
-      <br />
-      The French language isn't just beautiful to hear, it's a gateway to a rich
-      culture, vibrant history, and exciting opportunities. Here at A-Z New Age
-      Tutors, we invite you to embark on a journey of French language learning:
-      <br />
-      <br />
-      <ul>
-        <li>
-          <strong>Expand Your Horizons: </strong>French is spoken by over 300
-          million people worldwide, opening doors to travel, study, and work in
-          a multitude of countries.
-          <br />
-          <br />
-        </li>
-        <li>
-          <strong>Expand Your Horizons: </strong>Learning French unlocks a
-          treasure trove of literature, cinema, music, and art. Gain a deeper
-          appreciation for French culture and connect with French-speaking
-          communities around the globe.
-          <br />
-          <br />
-        </li>
-        <li>
-          <strong>Expand Your Horizons: </strong>Studies show that learning a
-          new language like French enhances cognitive skills, memory, and
-          problem-solving abilities.
-          <br />
-          <br />
-        </li>
-      </ul>
-      <h4>We Offer Something for Everyone:</h4>
-      <br />
-      Whether you're a complete beginner or looking to refine your existing
-      skills, we have a French language program for you:
-      <br />
-      <br />
-      <ul>
-        <li>
-          <strong>Engaging Classes: </strong>Our interactive classes, led by
-          passionate native speakers, make learning French fun and effective.
-          <br />
-          <br />
-        </li>
-        <li>
-          <strong>Engaging Classes: </strong>We prioritize communication skills,
-          ensuring you can confidently speak and understand French in everyday
-          situations.
-          <br />
-          <br />
-        </li>
-        <li>
-          <strong>Engaging Classes: </strong>Choose from a variety of class
-          schedules and formats, including online courses, in-person classes,
-          and private tutoring, to fit your busy lifestyle.
-          <br />
-          <br />
-        </li>
-      </ul>
-      <h4>Investing in Your Future:</h4>
-      <br />
-      Learning French is an investment in yourself. It opens doors to academic
-      pursuits, career opportunities, and personal growth.
-      <br />
-      <br />
-      Ready to embark on your French language adventure?
-      <br />
-      <br />
-      Contact us today to learn more about our comprehensive French language
-      programs and find the perfect fit for your goals! Let's unlock the world
-      of French language together.
-      <br />{" "}
+      <section className="relative max-w-[1160px] m-auto mt-[136px] mb-[313px]">
+        <h1 className="text-[64px] mb-[62px]">Contact Us</h1>
+        <Image
+          src="/contact-ppl.png"
+          alt="contact"
+          width={810}
+          height={618}
+          className="rounded-[32px]"
+        />
+        <div className="w-[698px] flex flex-col gap-[20px] px-[50px] py-[72px] bg-black opacity-90 rounded-[32px] absolute top-[53.5px] right-0">
+          <Input placeholder="Full Name" />
+          <Input placeholder="Email address" type="email" />
+          <Input placeholder="Confirm email address" type="email" />
+          <Input placeholder="Enter coupon" />
+          <textarea
+            placeholder="Write your message"
+            className="resize-none p-[20px] rounded-[10px] text-[20px] leading-[24px] h-[237px] placeholder:text-gray"
+          />
+          <Image
+            src="/send-contact.svg"
+            alt="send contact"
+            width={80}
+            height={80}
+            className="self-end"
+          />
+        </div>
+      </section>
+      <section className="max-w-[983px] m-auto mb-[238px] flex flex-row justify-center gap-[80px] flex-wrap font-bold">
+        <Contact iconSrc="/whatsapp-contact.svg">+234 816 142 8680</Contact>
+        <Contact iconSrc="/email-contact.svg">
+          atoznewagetutors@gmail.com
+        </Contact>
+        <Contact iconSrc="/fb-contact.svg">A-Z New Age Tutors</Contact>
+        <Contact iconSrc="/x-contact.svg">A2zNewageTutors</Contact>
+        <Contact iconSrc="/insta-contact.svg">atoznewagetutorsnigeria</Contact>
+      </section>
     </>
   );
 }
 
-function li({ children }: Readonly<{ children: ReactNode }>) {
-  return <li>{children}</li>;
+function Contact({ iconSrc, children }: { iconSrc: string; children: any }) {
+  return (
+    <div className="flex flex-col gap-4 p-4 items-center bg-gray-blue rounded-[16px]">
+      <Image src={iconSrc} width={80} height={80} alt="contact" />
+      {children}
+    </div>
+  );
 }
 
+function Input({
+  placeholder,
+  type = "text",
+}: {
+  placeholder: string;
+  type?: string;
+}) {
+  return (
+    <input
+      type={type}
+      placeholder={placeholder}
+      className="px-[20px] py-[29px] rounded-[10px] text-[20px] leading-[24px] placeholder:text-gray"
+    />
+  );
+}
