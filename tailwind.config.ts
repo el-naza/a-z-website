@@ -14,7 +14,8 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       fontFamily: {
-        sans: ["var(--font-anybody)", "var(--font-ubuntu)"],
+        anybody: "var(--font-anybody)",
+        ubuntu: "var(--font-ubuntu)",
       },
     },
     colors: {
@@ -33,3 +34,8 @@ const config: Config = {
   plugins: [],
 };
 export default config;
+
+
+
+
+

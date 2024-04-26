@@ -51,9 +51,7 @@ export default function Home() {
             we provide a personalized learning experience that ignites a passion
             for learning and helps students achieve their academic goals.
           </p>
-          <CustomButton>
-            <h5 className="font-normal">Learn More</h5>
-          </CustomButton>
+          <CustomButton>Learn More</CustomButton>
         </WordingItem>
 
         <Image
@@ -156,9 +154,7 @@ export default function Home() {
             We offer a comprehensive range of tutoring services to support your
             child's success. 
           </p>
-          <CustomButton>
-            <h5 className="font-normal">Learn More</h5>
-          </CustomButton>
+          <CustomButton>Learn More</CustomButton>
         </WordingItem>
       </section>
 
@@ -171,9 +167,7 @@ export default function Home() {
             Unveiling the impact we've made on families.. Read what parents are
             saying about their child's progress. 
           </p>
-          <CustomButton>
-            <h5 className="font-normal">See all testimonials</h5>
-          </CustomButton>
+          <CustomButton>See all testimonials</CustomButton>
         </WordingItem>
 
         <Image
@@ -206,7 +200,8 @@ export default function Home() {
 
       <CallToApply />
       <Faqs />
-      <ConsultUs />
     </div>
   );
 }
+
+

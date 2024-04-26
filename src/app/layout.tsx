@@ -51,7 +51,7 @@ export default function RootLayout({
                 width={82}
                 height={82}
               />
-              <nav className="flex gap-[50px]">
+              <nav className="flex gap-[50px] text-[20px] leading-[24px]">
                 <NavLink href="/">Home</NavLink>
                 <div className="group relative cursor-pointer">
                   <span className="text-gray">What we do</span>
@@ -69,7 +69,7 @@ export default function RootLayout({
                   </div>
                 </div>
                 <NavLink href="/our-team">Our team</NavLink>
-                <NavLink href="/#testimonials">Testimonials</NavLink>
+                <NavLink href="/testimonials">Testimonials</NavLink>
                 <NavLink href="/career">Career</NavLink>
                 <NavLink href="/contact-us">Contact us</NavLink>
               </nav>
@@ -82,7 +82,9 @@ export default function RootLayout({
           <section className="bg-black pt-[97px] pb-[70px] text-white">
             <div className="flex justify-between max-w-[1071px] m-auto">
               <div className="flex flex-col max-w-[431px]">
-                <h4 className="mb-[16px]">Sign-up for our newsletter</h4>
+                <h4 className="mb-[16px] text-white">
+                  Sign-up for our newsletter
+                </h4>
                 <p className="pb-[52px] text-gray">
                   Get exclusive educational{" "}
                   <span className="text-white">tips and updates</span> straight
@@ -182,6 +184,10 @@ function WhatWeDoMenuItem({
     </Link>
   );
 }
+
+
+
+
 
 
 

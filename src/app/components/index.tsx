@@ -9,7 +9,7 @@ export function li({ children }: Readonly<{ children: ReactNode }>) {
 export function ConsultUs() {
   return (
     <div
-      className="flex gap-[60px] m-auto mb-[147px] max-w-[1010px] px-[40px] py-[32px] rounded-[74px] items-center"
+      className="flex bg-white gap-[60px] m-auto mb-[147px] max-w-[1010px] px-[40px] py-[32px] rounded-[74px] items-center"
       style={{
         boxShadow: "0px 1px 22.8px 0px #00000012",
       }}
@@ -25,7 +25,7 @@ export function ConsultUs() {
         }}
       />
       <div className="flex-1">
-        <p className="bg-gradient-to-r from-[#50E4ED] to-[#3492D6] text-[transparent] bg-clip-text text-[64px] leading-[76.8px] mb-[4px]">
+        <p className="font-anybody bg-gradient-to-r from-[#50E4ED] to-[#3492D6] text-[transparent] bg-clip-text text-[64px] leading-[76.8px] mb-[4px]">
           Consult Us
         </p>
         <p className="mb-[20px]">
@@ -79,7 +79,7 @@ export function CallToApply() {
   return (
     <div className="flex gap-[16px] max-w-[1010px] m-auto mb-[230px] items-center bg-gradient-to-r from-[#579797] to-[#03A4AE9C] pl-[101px] pr-[64px] py-[46px] rounded-[12px]">
       <WordingItem gapClass="gap-[16px]" className="text-white">
-        <h4>Become a tutor in A-Z New Age Tutors</h4>
+        <h4 className="text-white">Become a tutor in A-Z New Age Tutors</h4>
         <p>
           Make a Difference. Join Our Team of Passionate Tutors. Empower
           Students; share Your Knowledge; become a Tutor. 
@@ -247,6 +247,12 @@ export function WordingItem({
     </div>
   );
 }
+
+
+
+
+
+
 
 
 

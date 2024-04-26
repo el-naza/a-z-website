@@ -43,39 +43,34 @@ ul {
   padding-left: 35px;
 }
 
-h1 {
-  font-family: var(--font-anybody);
+h1, h2, h3, h4{
+  color: #0C0C0C;
   font-weight: bold;
+}
+
+h1, h2, h3, h4{
+  font-family: var(--font-anybody);
+}
+
+h1 {
   font-size: 54px;
   line-height: 76.8px;
 }
 
 h2 {
   font-family: var(--font-anybody);
-  font-weight: bold;
   font-size: 48px;
   line-height: 57.6px;
 }
 
 h3 {
-  font-family: var(--font-anybody);
-  font-weight: bold;
   font-size: 40px;
   line-height: 48px;
 }
 
 h4 {
-  font-family: var(--font-anybody);
-  font-weight: bold;
   font-size: 32px;
   line-height: 38.4px;
-}
-
-h5 {
-  /* font-family: var(--font-anybody); */
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 28.8px;
 }
 
 .tiny {
