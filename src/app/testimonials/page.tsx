@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { CallToApply } from "../components";
 
-export default function () {
+export default function Testimonials() {
   return (
     <>
       <Image
@@ -11,14 +11,14 @@ export default function () {
         alt="pink gradient"
         className="absolute aspect-[29] top-[1179px] h-[1050px] w-[1440px] left-0 right-0 z-[-10]"
       />
-      <div className="max-w-[1010px] m-auto mt-[157px] mb-[72px]">
-        <h2 className="mb-[72px]">What our clients say</h2>
+      <div className="max-w-[1010px] m-auto mt-[83px] md:mt-[157px] mb-[72px]">
+        <h2 className="md:mb-[72px] mb-[23px]">What our clients say</h2>
         <p className="text-[20px] leading-[24px]">
           Discover how we've helped others achieve their goals. Read real
           stories of success from our students and parents.
         </p>
       </div>
-      <section className="w-[1174px] mb-[72px] m-auto flex justify-between items-center">
+      {/* <section className="w-[1174px] mb-[72px] m-auto flex justify-between items-center">
         <Arrow />
 
         <div className="w-[974px] h-full p-[20px] flex justify-between items-center">
@@ -48,7 +48,7 @@ export default function () {
           </div>
         </div>
         <Arrow />
-      </section>
+      </section> */}
       <CallToApply />
     </>
   );
@@ -95,4 +95,3 @@ function TestimonyCard({
     </div>
   );
 }
-

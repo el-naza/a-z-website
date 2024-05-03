@@ -13,6 +13,10 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      boxShadow: {
+        lg: "0px 0px 42.1px 0px #00000033",
+        sm: "0px 0px 3.5px 0px #0000001A",
+      },
       fontFamily: {
         anybody: "var(--font-anybody)",
         ubuntu: "var(--font-ubuntu)",
