@@ -104,15 +104,15 @@ export function Faqs() {
           answer="Some answer to the question asked above"
         ></FaqItem>
         <FaqItem
-          faq="What services do you offer?"
+          faq="What are the benefits of using your services?"
           answer="Some answer to the question asked above"
         ></FaqItem>
         <FaqItem
-          faq="What services do you offer?"
+          faq="How do I get started with your services?"
           answer="Some answer to the question asked above"
         ></FaqItem>
         <FaqItem
-          faq="What services do you offer?"
+          faq="Who are your services geared towards to?"
           answer="Some answer to the question asked above"
         ></FaqItem>
       </div>
@@ -130,7 +130,7 @@ export function FaqItem({
   children?: React.ReactNode;
 }>) {
   return (
-    <div className="flex bg-gray-blue p-[20px] md:p-[32px] rounded-[12px] justify-between gap-5 ">
+    <div className="flex bg-gray-blue p-[20px] md:p-[32px] rounded-[12px] justify-between gap-5">
       <div className="flex flex-col gap-[12px]">
         <h5 className="max-md:font-normal">{faq}</h5>
         <p className="tiny">{answer}</p>
