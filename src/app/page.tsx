@@ -38,7 +38,30 @@ export default function Home() {
           // className="aspect-square rounded-full h-[200px]"
           width={430.29}
           height={404.47}
-          className=" max-md:h-[225.6px] max-md:w-[240px]"
+          className="relative max-md:h-[225.6px] max-md:w-[240px]"
+        />
+        
+        <Image
+          alt="happy kid"
+          src="/crown.svg"
+          width={72}
+          height={70.02}
+          className="absolute max-md:w-[48px] max-md:h-[50px] max-md:right-[200px] max-md:top-[208px] right-[200px] top-[160px] w-70 h-70.2"
+          style={{
+          animationName: 'rotate', 
+          animationDuration: '.4s', 
+          animationTimingFunction: 'linear',
+          animationIterationCount: 'infinite', 
+          }}
+        />
+
+        <Image
+          alt="happy kid"
+          src="/sign.svg"
+          width={58}
+          height={25}
+          className="absolute left-[840px] top-[463px] max-md:left-[170px] max-md:top-[395px]"
+         
         />
         <div className="flex gap-[16px] mt-[20px] md:hidden">
           <CustomButton>Learn More</CustomButton>
@@ -98,7 +121,7 @@ export default function Home() {
         </WordingItem>
 
         <Image
-          className="absolute max-md:hidden left-[372px] top-[360px]"
+          className="absolute max-md:hidden left-[120px] top-[95px]"
           src="/kite.png"
           alt="certified"
           width="72"
@@ -116,13 +139,7 @@ export default function Home() {
             height={240}
           />
 
-          <Image
-            className="bg-tertiary rounded-[20px] absolute bottom-0 right-0"
-            src="/boy-with-glasses.png"
-            alt="A-Z_NEW_widthAGE_TUTORS_-_LOGO"
-            width={222.27}
-            height={270}
-          />
+       
         </div>
         <WordingItem
           gapClass="max-md:gap-[32px] gap-[30px]"

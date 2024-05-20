@@ -8,7 +8,8 @@ export function li({ children }: Readonly<{ children: ReactNode }>) {
 
 export function ConsultUs() {
   return (
-    <div className="flex flex-wrap bg-white gap-[60px] gap-y-[16px] md:m-auto md:mb-[147px] mb-[147px] max-w-[1010px] px-[40px] py-[32px] rounded-[74px] items-center shadow-[0px_1px_22.8px_0px_#00000012] justify-center">
+    <div className="relative flex justify-center w-full">
+      <div className="flex flex-wrap bg-white gap-[60px] gap-y-[16px] md:m-auto md:mb-[147px] mb-[147px] max-w-[1010px] px-[40px] py-[32px] rounded-[74px] items-center shadow-[0px_1px_22.8px_0px_#00000012] justify-center">
       <Image
         src="/customer-care-rep.png"
         alt="customer care representative"
@@ -16,6 +17,8 @@ export function ConsultUs() {
         height={620}
         className="max-md:w-[145px] max-md:h-[299px] rounded-[700px] shadow-[0px_0px_42.1px_0px_#0000001A]"
       />
+
+      
       <div className="flex-1 max-md:text-center">
         <p className="font-anybody bg-gradient-to-r from-[#50E4ED] to-[#3492D6] text-[transparent] bg-clip-text text-[64px] leading-[76.8px] mb-[4px] max-md:text-[24px] max-md:leading-[28.8px] max-md:font-bold">
           Consult Us
@@ -48,6 +51,32 @@ export function ConsultUs() {
           <p className="tiny text-primary2">Message Us on Whatsapp instead</p>
         </div>
       </div>
+     
+      </div>
+
+      <Image
+            src="/Ellipse.svg"
+            alt="ellipse"
+            width={94}
+            height={94}
+            className="absolute -top-[75px] -left-[25px] -z-[10] max-md:-top-[60px] max-md:h-[60px] max-md:w-[60px] max-md:-left-[30px]"
+          />
+
+      <Image
+            src="/measure.svg"
+            alt="measure"
+            width={54}
+            height={94}
+            className="absolute top-[60px] -right-[36.7px] -z-[10] max-md:top-[60px] max-md:h-[50px] max-md:w-[50px] max-md:-right-[70px]"
+          />
+
+       <Image
+            src="/Ellipse1.svg"
+            alt="ellipse"
+            width={94}
+            height={94}
+            className="absolute top-[165px] -right-[36.7px] -z-[10] max-md:top-[120px] max-md:h-[60px] max-md:w-[60px] max-md:-right-[70px]"
+          />
     </div>
   );
 }
@@ -93,7 +122,7 @@ export function CallToApply() {
 
 export function Faqs() {
   return (
-    <div className="flex gap-[24px] m-auto md:mb-[230px] mb-[60px] max-w-[895px] flex-col items-center">
+    <div className=" relative flex gap-[24px] m-auto md:mb-[230px] mb-[60px] max-w-[895px] flex-col items-center">
       <h2 className="text-primary  text-center">Frequently Asked Questions</h2>
       <h5 className="font-normal text-center m">
         Find the answers you need and get started today!
@@ -116,6 +145,9 @@ export function Faqs() {
           answer="Some answer to the question asked above"
         ></FaqItem>
       </div>
+
+     
+        
     </div>
   );
 }
