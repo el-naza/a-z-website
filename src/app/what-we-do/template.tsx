@@ -33,7 +33,7 @@ export default function WhatWeDoLayout({
 
   return (
     <>
-      <section className="max-w-[1110px] m-auto">
+    <section className="max-w-[1110px] m-auto">
         <div className="md:mb-[84px] mb-[60px] md:mt-[152px] mt-[28px] md:h-[508px] h-[163.19px] overflow-hidden md:rounded-[60px] rounded-[30px] text-white flex items-center justify-center max-w-[1110px] relative">
           <Image
             src={`${pathName}-l.png`}
@@ -50,7 +50,12 @@ export default function WhatWeDoLayout({
         <article className="max-md:px-[17px]">{children}</article>
       </section>
 
-      <div className="md:w-[544px] w-[218px] m-auto mt-[60px] md:mb-[150px] mb-[60px] rounded-full md:h-[100px] h-[69px] leading-none p-[4px] pr-[4.5px] [background-image:linear-gradient(180deg,_#50E4ED_0%,_#3492D6_100%)] text-primary2 bg-white text-[24px]">
+      <div
+        className="md:w-[544px] w-[218px] m-auto mt-[60px] md:mb-[150px] mb-[60px] rounded-full md:h-[100px] h-[69px] leading-none p-[4px] pr-[4.5px] [background-image:linear-gradient(180deg,_#50E4ED_0%,_#3492D6_100%)] text-primary2 bg-white text-[24px]"
+        // style={{
+        //   backgroundImage: "linear-gradient(180deg, #50E4ED 0%, #3492D6 100%)",
+        // }}
+      >
         <span className="h-full w-full rounded-full  bg-white flex items-center justify-center">
           <span className="[background-image:linear-gradient(180deg,_#50E4ED_0%,_#3492D6_100%)] text-[transparent] bg-clip-text">
             Consult Us

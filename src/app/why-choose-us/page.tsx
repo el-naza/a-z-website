@@ -3,13 +3,13 @@ import Image from "next/image";
 export default function WhyChooseUs() {
   return (
     <>
-      <section className="relative flex items-center justify-center w-full h-[445px] bg-black">
+      <section className="relative flex items-center justify-center w-[calc(100%+76px)] h-[445px] bg-black ml-[-38px] mr">
         <Image
           src="/learners.png"
           alt="learners"
           width={1440}
           height={445}
-          className="absolute left-0 right-0 top-0 bottom-0"
+          className="absolute left-0 right-0 top-0 bottom-0 w-full h-full"
         />
         <h2 className="text-center z-10 text-white">
           Empowering learners
@@ -17,9 +17,9 @@ export default function WhyChooseUs() {
           to succeed
         </h2>
       </section>
-      <section className="mt-[68px] mb-[225px] ml-[160px] w-[864px]">
+      <section className="mt-[68px] mb-[225px] mx-auto max-w-[1116px]">
         <p className="small mb-[60px]">
-          we provide a personalized learning experience that ignites a passion
+          We provide a personalized learning experience that ignites a passion
           for learning and helps students achieve their academic goals.
         </p>
         <h4>Why Choose Us?</h4>

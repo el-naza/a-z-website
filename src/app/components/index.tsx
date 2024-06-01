@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import Image from "next/image";
-import { InputHTMLAttributes, ReactNode, TextareaHTMLAttributes } from "react";
+import {HTMLAttributes, InputHTMLAttributes, ReactNode, TextareaHTMLAttributes} from "react";
 
 export function li({ children }: Readonly<{ children: ReactNode }>) {
   return <li>{children}</li>;
@@ -8,47 +8,48 @@ export function li({ children }: Readonly<{ children: ReactNode }>) {
 
 export function ConsultUs() {
   return (
-    <div className="flex flex-wrap bg-white gap-[60px] gap-y-[16px] md:m-auto md:mb-[147px] mb-[147px] max-w-[1010px] px-[40px] py-[32px] rounded-[74px] items-center shadow-[0px_1px_22.8px_0px_#00000012] justify-center">
-      <Image
-        src="/customer-care-rep.png"
-        alt="customer care representative"
-        width={272}
-        height={620}
-        className="max-md:w-[145px] max-md:h-[299px] rounded-[700px] shadow-[0px_0px_42.1px_0px_#0000001A]"
-      />
-      <div className="flex-1 max-md:text-center">
-        <p className="font-anybody bg-gradient-to-r from-[#50E4ED] to-[#3492D6] text-[transparent] bg-clip-text text-[64px] leading-[76.8px] mb-[4px] max-md:text-[24px] max-md:leading-[28.8px] max-md:font-bold">
-          Consult Us
-        </p>
-        <p className="mb-[20px]">
-          Let's discuss your needs. We're
-          <br className="md:hidden" /> here to help.
-        </p>
-        <div className="flex flex-col gap-[20px]">
-          <CustomInput placeholder="Full name" />
-          <CustomInput type="email" placeholder="Email address" />
-          <CustomInput placeholder="Enter coupon" />
-          <CustomInput type="email" placeholder="Confirm email address" />
-          <CustomTextArea
-            name=""
-            id=""
-            // cols={30}
-            rows={7.2}
-            placeholder="Write your message here"
-          />
-        </div>
-        <div className="flex flex-col pt-[16px] gap-[20px]">
-          <Image
-            src="/send.svg"
-            alt="send"
-            width={80}
-            height={80}
-            className="self-end max-md:w-[60px]"
-          />
-          <p className="tiny text-primary2">Message Us on Whatsapp instead</p>
+      <div className="relative flex flex-wrap bg-white gap-[60px] gap-y-[16px] md:m-auto md:mb-[147px] mb-[147px] max-w-[1010px] px-[40px] py-[32px] rounded-[74px] items-center shadow-[0px_1px_22.8px_0px_#00000012] justify-center">
+        <div id="consult-us" className="absolute top-[-120px]"/>
+        <Image
+            src="/customer-care-rep.png"
+            alt="customer care representative"
+            width={272}
+            height={620}
+            className="max-md:w-[145px] max-md:h-[299px] rounded-[700px] shadow-[0px_0px_42.1px_0px_#0000001A]"
+        />
+        <div className="flex-1 max-md:text-center">
+          <p className="font-anybody bg-gradient-to-r from-[#50E4ED] to-[#3492D6] text-[transparent] bg-clip-text text-[64px] leading-[76.8px] mb-[4px] max-md:text-[24px] max-md:leading-[28.8px] max-md:font-bold">
+            Consult Us
+          </p>
+          <p className="mb-[20px]">
+            Let's discuss your needs. We're
+            <br className="md:hidden"/> here to help.
+          </p>
+          <div className="flex flex-col gap-[20px]">
+            <CustomInput placeholder="Full name"/>
+            <CustomInput type="email" placeholder="Email address"/>
+            <CustomInput placeholder="Enter coupon"/>
+            <CustomInput type="email" placeholder="Confirm email address"/>
+            <CustomTextArea
+                name=""
+                id=""
+                // cols={30}
+                rows={7.2}
+                placeholder="Write your message here"
+            />
+          </div>
+          <div className="flex flex-col pt-[16px] gap-[20px]">
+            <Image
+                src="/send.svg"
+                alt="send"
+                width={80}
+                height={80}
+                className="self-end max-md:w-[60px]"
+            />
+            <p className="tiny text-primary2">Message Us on Whatsapp instead</p>
+          </div>
         </div>
       </div>
-    </div>
   );
 }
 
@@ -241,7 +242,8 @@ export function WordingItem({
   gapClass?: string;
   className?: string;
   children?: React.ReactNode;
-}>) {
+} & HTMLAttributes<HTMLElement>>) {
+  // console.log("props", props)
   return (
     <div
       className={`flex flex-col ${

@@ -6,13 +6,13 @@ import { CustomButton } from "../components";
 export default function Career() {
   return (
     <>
-      <section className="relative">
+      <section className="relative ml-[-38px] w-[calc(100%+76px)]">
         <Image
           width={1440}
           height={343}
           src="/career-people.png"
           alt="career people"
-          className="mb-[42px] bg-black"
+          className="mb-[42px] bg-black w-full"
         />
         <h2 className="absolute top-0 bottom-0 left-0 right-0 text-white flex justify-center items-center">
           Join our team
