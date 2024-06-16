@@ -138,7 +138,13 @@ export default function Home() {
             width={197.57}
             height={240}
           />
-
+          <Image
+            className="bg-tertiary rounded-[20px] absolute bottom-0 right-0"
+            src="/boy-with-glasses.png"
+            alt="A-Z_NEW_widthAGE_TUTORS_-_LOGO"
+            width={222.27}
+            height={270}
+          />
        
         </div>
         <WordingItem
