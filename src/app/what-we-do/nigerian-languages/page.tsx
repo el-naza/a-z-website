@@ -4,17 +4,17 @@ import { ReactNode } from "react";
 export default function NigerianLanguages() {
   return (
     <>
-      <h4>Ignite a Love of Learning: Nigerian Languages for All Ages</h4>
+      <h4>Ignite a Love for Learning Nigerian Languages for All Ages</h4>
       <br />
       Nigeria's vibrant tapestry of languages offers a wealth of cultural
       richness and opens doors to communication and connection. At A-Z New Age
       Tutors, we believe everyone deserves the opportunity to explore this
       linguistic treasure trove. That's why we offer engaging Nigerian language
-      programs designed to ignite a love of learning in both children and
+      programs designed to ignite a love for learning in both children and
       adults!
       <br />
       <br />
-      <h4>For Kids:</h4>
+      <h4>For Kids</h4>
       <br />
       <ul>
         <li>
@@ -39,7 +39,7 @@ export default function NigerianLanguages() {
         </li>
       </ul>
       <br />
-      <h4>For Adults:</h4>
+      <h4>For Adults</h4>
       <br />
       <ul>
         <li>
@@ -63,7 +63,7 @@ export default function NigerianLanguages() {
           <br />
         </li>
       </ul>
-      <h4>We Offer Something for Everyone:</h4>
+      <h4>We Offer Something for Everyone</h4>
       <br />
       <ul>
         <li>
@@ -80,7 +80,7 @@ export default function NigerianLanguages() {
         </li>
         <li>
           <strong>Experienced instructors:</strong> Our passionate and qualified
-          teachers, many of whom are native speakers, will guide you on your
+          tutors, many of whom are native speakers, will guide you on your
           language learning journey.
           <br />
           <br />

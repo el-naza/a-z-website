@@ -4,36 +4,45 @@ import { ReactNode } from "react";
 export default function MontessoriAndEyfsEducation() {
   return (
     <>
-      At A-Z New Age Tutors, we believe in fostering a love of learning in young
+      At A-Z New Age Tutors, we believe in fostering a love for learning in young
       children. That's why we combine the best aspects of both Montessori and
       EYFS educational philosophies to create a stimulating and nurturing
       environment where children can thrive.
       <br />
       <br />
-      <h4>Montessori Principles:</h4>
+      <h4>Montessori Principles</h4>
       <br />
       <ul>
         <li>
-          Self-Directed Learning: We encourage children to explore their
+          <strong>
+
+          Self-Directed Learning: 
+          </strong>
+          We encourage children to explore their
           interests and learn at their own pace through hands-on activities and
           self-discovery.
           <br />
           <br />
         </li>
         <li>
-          Individualized Approach: Our curriculum is designed to cater to each
+          <strong>
+          Individualized Approach: 
+          </strong>
+          Our curriculum is designed to cater to each
           child's unique learning style and developmental needs.
           <br />
           <br />
         </li>
         <li>
-          Prepared Learning Environment: Our classrooms are thoughtfully
+          <strong>
+          Prepared Learning Environment: </strong>
+          Our classrooms are thoughtfully
           prepared with high-quality Montessori materials that encourage
           exploration, sensory play, and independent learning.
         </li>
       </ul>
-      <br />
-      <h4>EYFS Framework:</h4>
+      <br/>
+      <h4>EYFS Framework</h4>
       <br />
       <ul>
         <li>
@@ -59,7 +68,7 @@ export default function MontessoriAndEyfsEducation() {
         </li>
       </ul>
       <br />
-      <h4>The Montessori-EYFS Blend:</h4>
+      <h4>The Montessori-EYFS Blend</h4>
       <br />
       By combining these two educational approaches, we offer a unique learning
       environment that provides:
@@ -81,13 +90,13 @@ export default function MontessoriAndEyfsEducation() {
           <br />
         </li>
         <li>
-          <strong>A Love of Learning: </strong>
+          <strong>A Love for Learning: </strong>
           Our classrooms are filled with wonder and exploration, igniting a
           passion for lifelong learning.
         </li>
       </ul>
       <br />
-      <h4>Investing in Your Child's Future:</h4>
+      <h4>Investing in Your Child's Future</h4>
       <br />
       Montessori and EYFS education provide a strong foundation for future
       academic success and personal growth. We invite you to explore our program

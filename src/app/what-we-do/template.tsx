@@ -14,14 +14,14 @@ import { useParams, usePathname } from "next/navigation";
 const routeTitle: Record<string, string> = {
   "coding-for-kids-and-teens": "Coding for kids and teens",
   "core-subjects-for-all-grades": "Core subjects for all grades",
-  "french-language": "FRENCH LANGUAGE",
+  "french-language": "FOREIGN LANGUAGES",
   "home-schooling": "Home Schooling",
   "montessori-and-eyfs-education": "Montessori and EYFS Education",
   "nigerian-languages": "Nigerian Languages",
   "one-on-one-private-tutoring": "One-on-one Private Tutoring",
   "sat,-igcse,-ielts-exams": "SAT, IGCSE, IELTS exams",
   "special-needs-education": "Special Needs Education",
-  "waec,-jamb-and-neco-(gce)": "WAEC, JAMB AND NECO (GCE)",
+  "waec-jamb-and-neco-(gce)": "WAEC, JAMB AND NECO",
 };
 
 export default function WhatWeDoLayout({

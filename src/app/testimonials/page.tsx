@@ -15,7 +15,7 @@ export default function Testimonials() {
         <h2 className="md:mb-[72px] mb-[23px]">What our clients say</h2>
         <p className="text-[20px] leading-[24px]">
           Discover how we've helped others achieve their goals. Read real
-          stories of success from our students and parents.
+          stories of success from our learners and parents.
         </p>
       </div>
       {/* <section className="w-[1174px] mb-[72px] m-auto flex justify-between items-center">

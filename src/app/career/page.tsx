@@ -19,9 +19,9 @@ export default function Career() {
         </h2>
       </section>
       <section className="m-auto w-[1116px] mb-[100px]">
-        At A-Z New Age Tutors, we're dedicated to empowering students of all
+        At A-Z New Age Tutors, we're dedicated to empowering learners of all
         ages to achieve their academic goals. We believe in fostering a
-        supportive and collaborative learning environment where both students
+        supportive and collaborative learning environment where both learners
         and instructors can thrive.
         <br />
         <br />
@@ -31,7 +31,7 @@ export default function Career() {
           <li>
             <strong>Make a real difference: </strong>Join a team dedicated to
             empowering learners and transforming lives through education. Your
-            contributions will directly impact student success stories.
+            contributions will directly impact learner success stories.
             <br />
             <br />
           </li>

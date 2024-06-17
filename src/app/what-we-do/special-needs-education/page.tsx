@@ -9,7 +9,7 @@ export default function SpecialNeedsEducation() {
       At A-Z New Age Tutors, we believe that every child deserves the
       opportunity to reach their full potential. Our special needs education
       program is designed to provide a supportive and stimulating learning
-      environment where students with diverse needs can thrive.
+      environment where learners with diverse needs can thrive.
       <br />
       <br />
       We understand that each child learns differently. Our dedicated team of
@@ -17,7 +17,8 @@ export default function SpecialNeedsEducation() {
       develop a personalized learning plan that caters to their unique
       strengths, challenges, and learning styles.
       <br />
-      <h4>Here's what sets our special needs program apart:</h4>
+      <br />
+      <h4>Here is what sets our special needs program apart</h4>
       <br />
       <ul>
         <li>

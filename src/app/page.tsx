@@ -24,9 +24,9 @@ export default function Home() {
             </h1>
             <div className="flex flex-col gap-[40px]">
               <p>
-                Help Them Shine! Spark Their Potential with
+                Help them shine! Spark their potential with
                 <br/>
-                Personalized Tutoring.
+                personalized tutoring.
               </p>
               <div className="flex gap-[48px] max-md:hidden">
                 <Link href="#services">
@@ -39,6 +39,9 @@ export default function Home() {
               </div>
             </div>
           </WordingItem>
+
+          <div className={"relative"}>
+
           <Image
               alt="happy kid"
               src="/happy-kid.png"
@@ -47,6 +50,30 @@ export default function Home() {
               height={404.47}
               className=" max-md:h-[225.6px] max-md:w-[240px]"
           />
+          <Image
+              alt="crown"
+              src="/crown.svg"
+              width={72}
+              height={70.02}
+              className="absolute max-md:w-[48px] max-md:h-[50px] max-md:right-[44px] max-md:top-[-3px] right-[82px] top-[2px] w-70 h-70.2"
+              style={{
+                animationName: 'rotate',
+                animationDuration: '.4s',
+                animationTimingFunction: 'linear',
+                animationIterationCount: 'infinite',
+              }}
+          />
+          <Image
+              alt="squigly"
+              src="/sign.svg"
+              width={58}
+              height={25}
+              className="absolute left-[38.83px] top-[304.91px] max-md:left-[10px] max-md:top-[195px]"
+          />
+          </div>
+
+
+
           <div className="flex gap-[16px] mt-[20px] md:hidden">
             <Link href="#services">
               <CustomButton>Learn More</CustomButton>
@@ -58,10 +85,12 @@ export default function Home() {
         </section>
 
         <section
-            className="relative flex justify-between items-center max-w-[1271px] m-auto md:mb-[100px] mb-[70px] flex-col text-center">
+            className="relative flex justify-between items-center max-w-[1271px] m-auto md:mb-[211px] mb-[70px] flex-col text-center">
           <WordingItem className="max-w-[788px] items-center">
             <h3>
-              Empowering learners to succeed - <br/>
+              Empowering learners to succeed
+              <br/>
+              <br/>
               <h4 className="inline text-primary2 max-md:leading-[24px] max-md:text-[20px]">
                 Why choose us?
               </h4>
@@ -69,11 +98,11 @@ export default function Home() {
 
             <p className="max-md:mt-[-14px]">
               We provide a personalized learning experience that ignites a passion
-              for learning and helps students achieve their academic goals.
+              for learning and helps learners achieve their academic goals.
             </p>
 
             <div
-                className="flex flex-wrap gap-[20px] text-[16px] leading-[19.2px] min-h-[137.3px] justify-center max-md:w-[176px] text-left">
+                className="flex gap-[20px] text-[16px] leading-[19.2px] min-h-[137.3px] justify-center max-md:w-[176px] text-left">
               <ItemCard>
                 <Image
                     src="/proven-results.svg"
@@ -120,6 +149,29 @@ export default function Home() {
               height="72"
           />
         </section>
+
+
+        <Link href="/vision-mission-goals-and-objectives">
+          <section
+            className="relative pt-[140px] pb-[85px] rounded-[12px] mb-[295px] m-auto flex flex-col gap-[60px] max-w-[1100px] items-center min-h-[469px] overflow-hidden">
+            <Image
+              className="absolute top-[-150px] bg-secondary -z-10"
+              src="/visions-and-missions.png"
+              alt="visions-and-missions"
+              width={1100}
+              height={469}
+            />
+
+            <div
+              className="absolute top-0 flex h-full z-[-10] w-full items-center justify-center opacity-75 bg-[#100F0F]"/>
+            <h2 className="text-center text-white">
+              Our vision, mission, goals and objectives
+              set us apart.
+            </h2>
+            <CustomButton secondary>Learn More</CustomButton>
+          </section>
+        </Link>
+
 
         <section className="relative flex gap-[54.73px] justify-center items-center">
             <div id="services" className="absolute top-[-200px]"/>

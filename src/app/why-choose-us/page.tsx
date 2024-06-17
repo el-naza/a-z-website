@@ -20,7 +20,7 @@ export default function WhyChooseUs() {
       <section className="mt-[68px] mb-[225px] mx-auto max-w-[1116px]">
         <p className="small mb-[60px]">
           We provide a personalized learning experience that ignites a passion
-          for learning and helps students achieve their academic goals.
+          for learning and helps learners achieve their academic goals.
         </p>
         <h4>Why Choose Us?</h4>
         <div className="mt-[105px] flex gap-[120px] flex-col">
@@ -33,7 +33,7 @@ export default function WhyChooseUs() {
               className="rounded-[20px]"
             />
             <div className="gap-3 flex flex-col">
-              <h4>Certified Tutor</h4>
+              <h4>Certified Tutors</h4>
               <div className="gap-4 flex flex-col">
                 <div className="gap-[10px] p-[10px] flex rounded-[8px] shadow-[0px_0px_3.5px_0px_#00000033] ">
                   <Image
@@ -42,7 +42,7 @@ export default function WhyChooseUs() {
                     width={24}
                     height={24}
                   />
-                  <span className="opacity-70">Credentials You Can Trust</span>
+                  <span className="opacity-70">Credentials you can trust</span>
                 </div>
                 <div className="gap-[10px] p-[10px] flex rounded-[8px] shadow-[0px_0px_3.5px_0px_#00000033] ">
                   <Image
@@ -51,7 +51,7 @@ export default function WhyChooseUs() {
                     width={24}
                     height={24}
                   />
-                  <span className="opacity-70">Wealth of experience Trust</span>
+                  <span className="opacity-70">Wealth of experience</span>
                 </div>
                 <div className="gap-[10px] p-[10px] flex rounded-[8px] shadow-[0px_0px_3.5px_0px_#00000033] ">
                   <Image
@@ -83,7 +83,7 @@ export default function WhyChooseUs() {
                     width={24}
                     height={24}
                   />
-                  <span className="opacity-70">Individualized Assessment</span>
+                  <span className="opacity-70">Individualized assessment</span>
                 </div>
                 <div className="gap-[10px] p-[10px] flex rounded-[8px] shadow-[0px_0px_3.5px_0px_#00000033] ">
                   <Image
@@ -101,7 +101,7 @@ export default function WhyChooseUs() {
                     width={24}
                     height={24}
                   />
-                  <span className="opacity-70">Flexible Pace and Approach</span>
+                  <span className="opacity-70">Flexible pace and approach</span>
                 </div>
                 <div className="gap-[10px] p-[10px] flex rounded-[8px] shadow-[0px_0px_3.5px_0px_#00000033] ">
                   <Image
@@ -111,7 +111,7 @@ export default function WhyChooseUs() {
                     height={24}
                   />
                   <span className="opacity-70">
-                    Regular Monitoring and Adjustments
+                    Regular monitoring and adjustments
                   </span>
                 </div>
               </div>
@@ -126,7 +126,7 @@ export default function WhyChooseUs() {
               className="rounded-[20px]"
             />
             <div className="gap-3 flex flex-col">
-              <h4>Proven Result</h4>
+              <h4>Proven Results</h4>
               <div className="gap-4 flex flex-col">
                 <div className="gap-[10px] p-[10px] flex rounded-[8px] shadow-[0px_0px_3.5px_0px_#00000033] ">
                   <Image
@@ -135,7 +135,7 @@ export default function WhyChooseUs() {
                     width={24}
                     height={24}
                   />
-                  <span className="opacity-70">Individualized Assessment</span>
+                  <span className="opacity-70">Academic excellence</span>
                 </div>
                 <div className="gap-[10px] p-[10px] flex rounded-[8px] shadow-[0px_0px_3.5px_0px_#00000033] ">
                   <Image
@@ -144,7 +144,7 @@ export default function WhyChooseUs() {
                     width={24}
                     height={24}
                   />
-                  <span className="opacity-70">Tailored instructions</span>
+                  <span className="opacity-70">Guaranteed success in examinations</span>
                 </div>
                 <div className="gap-[10px] p-[10px] flex rounded-[8px] shadow-[0px_0px_3.5px_0px_#00000033] ">
                   <Image
@@ -153,7 +153,7 @@ export default function WhyChooseUs() {
                     width={24}
                     height={24}
                   />
-                  <span className="opacity-70">Flexible Pace and Approach</span>
+                  <span className="opacity-70">Improved self confidence</span>
                 </div>
                 <div className="gap-[10px] p-[10px] flex rounded-[8px] shadow-[0px_0px_3.5px_0px_#00000033] ">
                   <Image
@@ -163,7 +163,7 @@ export default function WhyChooseUs() {
                     height={24}
                   />
                   <span className="opacity-70">
-                    Regular Monitoring and Adjustments
+                    Enhanced critical thinking
                   </span>
                 </div>
               </div>

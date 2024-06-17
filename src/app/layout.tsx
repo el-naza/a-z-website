@@ -58,7 +58,7 @@ export default function RootLayout({
             <div className="flex flex-wrap md:justify-between max-w-[1071px] m-auto gap-y-[40px] justify-start max-md:gap-x-[30px]">
               <div className="flex flex-col max-w-[431px]">
                 <h4 className="mb-[16px] text-white">
-                  Sign-up for our newsletter
+                  Sign up for our newsletter=
                 </h4>
                 <p className="pb-[52px] text-gray">
                   Get exclusive educational{" "}

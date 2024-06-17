@@ -20,10 +20,10 @@ export default function OurTeam() {
           </span>
         </h2>
         <p className="md:text-[20px] md:leading-[24px]">
-          Our team is the heart of A-Z New Age Tutors. They're passionate
-          educators, subject experts, and lifelong learners, all dedicated to
+          Our team is the heart of A-Z New Age Tutors. We are passionate
+          educators, subject experts, and lifelong professionals, all dedicated to
           your academic success. Expect experienced instruction, personalized
-          support, and a genuine desire to see you thrive.
+          support, and a genuine desire to see our learners thrive.
         </p>
         <div className="mt-[72px] flex flex-wrap md:gap-x-[70px] md:gap-y-[92px] gap-y-[24px] max-md:justify-between">
           <TeamMemberCard

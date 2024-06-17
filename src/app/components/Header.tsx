@@ -107,11 +107,11 @@ export function Header() {
                   <WhatWeDoMenuItem title="Core subjects for all grades"/>
                   <WhatWeDoMenuItem title="Montessori and EYFS Education"/>
                   <WhatWeDoMenuItem title="SAT, IGCSE, IELTS exams"/>
-                  <WhatWeDoMenuItem title="WAEC, JAMB AND NECO (GCE)"/>
+                  <WhatWeDoMenuItem title="WAEC, JAMB AND NECO"/>
                   <WhatWeDoMenuItem title="Coding for kids and teens"/>
                   <WhatWeDoMenuItem title="Special Needs Education"/>
                   <WhatWeDoMenuItem title="Nigerian Languages"/>
-                  <WhatWeDoMenuItem title="French Language"/>
+                  <WhatWeDoMenuItem title="Foreign Languages"/>
                 </div>
               </div>
               <NavLink href="/our-team">Our team</NavLink>

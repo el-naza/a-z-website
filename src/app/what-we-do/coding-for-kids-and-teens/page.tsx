@@ -50,7 +50,7 @@ export default function OneOnOneHomeTutoring() {
           <br />
         </li>
       </ul>
-      <h4>Watch Your Child Thrive:</h4>
+      <h4>Watch Your Child Thrive</h4>
       <br />
       <ul>
         <li>
@@ -61,7 +61,7 @@ export default function OneOnOneHomeTutoring() {
         </li>
         <li>
           <strong>Embrace Challenges:</strong> We encourage creative
-          problem-solving, fostering a love of learning and perseverance.
+          problem-solving, fostering a love for learning and perseverance.
           <br />
           <br />
         </li>
@@ -73,7 +73,7 @@ export default function OneOnOneHomeTutoring() {
           <br />
         </li>
       </ul>
-      <h4>We Offer a Variety of Coding Programs:</h4>
+      <h4>We Offer a Variety of Coding Programs</h4>
       <br />
       <ul>
         <li>

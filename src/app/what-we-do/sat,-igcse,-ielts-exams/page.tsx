@@ -4,9 +4,9 @@ import { ReactNode } from "react";
 export default function OneOnOneHomeTutoring() {
   return (
     <>
-      <h4>Unlocking Opportunities Worldwide:</h4>
+      <h4>Unlocking Opportunities Worldwide</h4>
       <br />
-      At A-Z New Age Tutors, we empower students to achieve their academic
+      At A-Z New Age Tutors, we empower learners to achieve their academic
       dreams by providing expert preparation for internationally recognized
       exams. Whether your goal is studying abroad, pursuing higher education, or
       simply demonstrating English language proficiency, we offer targeted
@@ -18,7 +18,7 @@ export default function OneOnOneHomeTutoring() {
           <strong>SAT (Scholastic Assessment Test): </strong>
           Master the skills and strategies needed to succeed on the redesigned
           SAT. Our comprehensive prep courses cover critical reading, writing
-          and language, and math, ensuring you're confident on test day.
+          and language, and maths, ensuring you are confident on test day.
           <br />
           <br />
         </li>
@@ -26,7 +26,7 @@ export default function OneOnOneHomeTutoring() {
           <strong>
             IGCSE (International General Certificate of Secondary Education): 
           </strong>
-          Achieve top grades in your IGCSE exams. We offer personalized tutoring
+          Achieve high grades in your IGCSE exams. We offer personalized tutoring
           for a wide range of subjects, helping you gain a strong foundation and
           solidify your understanding of key concepts.
           <br />
@@ -36,7 +36,7 @@ export default function OneOnOneHomeTutoring() {
           <strong>
             IELTS (International English Language Testing System): 
           </strong>
-          Demonstrate your English language proficiency for academic or
+          Demonstrate your English Language proficiency for academic or
           professional purposes. Our IELTS prep courses focus on all four skills
           – listening, reading, writing, and speaking – to ensure you meet the
           required band score.
@@ -57,7 +57,7 @@ export default function OneOnOneHomeTutoring() {
         </li>
         <li>
           <strong>Proven Results: </strong>We have a proven track record of
-          helping students achieve their desired scores on these high-stakes
+          helping learners achieve their desired scores on these high-stakes
           exams.
           <br />
           <br />
@@ -76,7 +76,7 @@ export default function OneOnOneHomeTutoring() {
           <br />
         </li>
       </ul>
-      <h4>Investing in Your Future:</h4>
+      <h4>Investing in Your Future</h4>
       <br />A strong performance on these exams can open doors to exciting
       academic and professional opportunities. We provide the tools and support
       you need to confidently take the next step in your journey.
@@ -85,7 +85,7 @@ export default function OneOnOneHomeTutoring() {
       Ready to Take Control of Your Future?
       <br />
       <br />
-      Contact us today for a free consultation! We'll discuss your specific
+      Contact us today for consultation! We'll discuss your specific
       goals and recommend the perfect exam prep program for you. Together, let's
       achieve your academic ambitions!
       <br />{" "}

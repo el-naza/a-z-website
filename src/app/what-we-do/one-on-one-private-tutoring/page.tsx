@@ -11,7 +11,7 @@ export default function OneOnOneHomeTutoring() {
       ensuring a clear path to academic success.
       <br />
       <br />
-      <h4>Benefits of Home Tutoring:</h4>
+      <h4>Benefits of Home Tutoring</h4>
       <br />
       <ul>
         <li>
@@ -36,10 +36,10 @@ export default function OneOnOneHomeTutoring() {
         </li>
       </ul>
       <br />
-      <h4>Proven Results, Lasting Impact:</h4>
+      <h4>Proven Results with Lasting Impact</h4>
       <br />
       Our personalized approach and one-on-one attention have a proven track
-      record of achieving exceptional results. We've helped countless students
+      record of achieving exceptional results with lasting impact. We've helped countless learners
       improve their grades, gain confidence in their abilities, and develop a
       love for learning.
       <br />
@@ -47,7 +47,7 @@ export default function OneOnOneHomeTutoring() {
       Ready to unlock your child's full potential?
       <br />
       <br />
-      Contact us today for a free consultation! Let's discuss your child's
+      Contact us today for consultation! Let's discuss your child's
       specific needs and how our one-on-one home tutoring programs can help them
       achieve academic success.
     </>
