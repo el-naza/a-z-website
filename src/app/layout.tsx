@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Anybody, Ubuntu, Roboto, Inter } from "next/font/google";
 import "./globals.css";
 import Image from "next/image";
-import { HTMLAttributes } from "react";
 import Link from "next/link";
 import { ConsultUs } from "./components";
 import { Header } from "./components/Header";

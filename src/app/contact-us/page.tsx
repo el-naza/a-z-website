@@ -30,6 +30,8 @@ export default function OneOnOneHomeTutoring() {
             height={80}
             className="self-end"
           />
+
+        
         </div>
       </section>
       <section className="max-w-[983px] m-auto mb-[238px] flex flex-row justify-center gap-[80px] flex-wrap font-bold">

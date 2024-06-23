@@ -1,6 +1,11 @@
 /* eslint-disable react/no-unescaped-entities */
 import Image from "next/image";
-import {HTMLAttributes, InputHTMLAttributes, ReactNode, TextareaHTMLAttributes} from "react";
+import {
+  HTMLAttributes,
+  InputHTMLAttributes,
+  ReactNode,
+  TextareaHTMLAttributes,
+} from "react";
 
 export function li({ children }: Readonly<{ children: ReactNode }>) {
   return <li>{children}</li>;
@@ -52,7 +57,6 @@ export function li({ children }: Readonly<{ children: ReactNode }>) {
 //       </div>
 //   );
 // }
-
 
 export function ConsultUs() {
   return (
@@ -155,8 +159,8 @@ export function CallToApply() {
       <WordingItem gapClass="gap-[16px]" className="text-white">
         <h4 className="text-white">Become a tutor with A-Z New Age Tutors</h4>
         <p>
-          Make a <strong>difference</strong>. Join our team of passionate tutors. Empower
-          learners and share your knowledge. 
+          Make a <strong>difference</strong>. Join our team of passionate
+          tutors. Empower learners and share your knowledge. 
         </p>
       </WordingItem>
 
@@ -169,7 +173,7 @@ export function CallToApply() {
 
 export function Faqs() {
   return (
-    <div className="flex gap-[24px] m-auto md:mb-[230px] mb-[60px] max-w-[895px] flex-col items-center">
+    <div className=" relative flex gap-[24px] m-auto md:mb-[230px] mb-[60px] max-w-[895px] flex-col items-center">
       <h2 className="text-primary  text-center">Frequently Asked Questions</h2>
       <h5 className="font-normal text-center m">
         Find the answers you need and get started today!
@@ -317,11 +321,13 @@ export function WordingItem({
   className,
   children,
   ...props
-}: Readonly<{
-  gapClass?: string;
-  className?: string;
-  children?: React.ReactNode;
-} & HTMLAttributes<HTMLElement>>) {
+}: Readonly<
+  {
+    gapClass?: string;
+    className?: string;
+    children?: React.ReactNode;
+  } & HTMLAttributes<HTMLElement>
+>) {
   // console.log("props", props)
   return (
     <div
