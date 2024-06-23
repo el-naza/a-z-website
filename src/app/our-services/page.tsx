@@ -37,7 +37,7 @@ export default function OurServices() {
           <OfferItem title="Coding for kids and teens" />
           <OfferItem title="Special Needs Education" />
           <OfferItem title="Nigerian Languages" />
-          <OfferItem title="French Language" />
+          <OfferItem title="Foreign Languages" />
         </div>
       </section>
       <Faqs />

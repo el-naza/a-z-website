@@ -14,7 +14,7 @@ import { useParams, usePathname } from "next/navigation";
 const routeTitle: Record<string, string> = {
   "coding-for-kids-and-teens": "Coding for kids and teens",
   "core-subjects-for-all-grades": "Core subjects for all grades",
-  "french-language": "FOREIGN LANGUAGES",
+  "foreign-languages": "FOREIGN LANGUAGES",
   "home-schooling": "Home Schooling",
   "montessori-and-eyfs-education": "Montessori and EYFS Education",
   "nigerian-languages": "Nigerian Languages",
