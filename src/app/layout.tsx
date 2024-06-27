@@ -44,6 +44,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        {/* <script src="https://unpkg.com/@ungap/custom-elements-builtin"></script> */}
+        {/* <script type="module" src="https://unpkg.com/x-frame-bypass"></script> */}
+      </head>
       <body
         className={`${anybody.variable} ${ubuntu.variable} ${roboto.variable} ${inter.variable} ${ubuntu.className} text-[24px] leading-[28.8px] max-md:w-screen max-md:text-[14px] max-md:leading-[21px]`}
       >
@@ -57,14 +61,13 @@ export default function RootLayout({
             <div className="flex flex-wrap md:justify-between max-w-[1071px] m-auto gap-y-[40px] justify-start max-md:gap-x-[30px]">
               <div className="flex flex-col max-w-[431px]">
                 <h4 className="mb-[16px] text-white">
-                  Sign up for our newsletter=
+                  Follow or reach out to us
                 </h4>
-                <p className="pb-[52px] text-gray">
-                  Get exclusive educational{" "}
-                  <span className="text-white">tips and updates</span> straight
-                  to your mailbox.
+                <p className="text-gray">
+                  You can follow or reach out to us through our social medial
+                  handles below. We{"'"}re always happy to hear from you.
                 </p>
-                <div className="pl-[30px] h-[55.54px] flex bg-white self-start">
+                {/* <div className="mt-[52px] pl-[30px] h-[55.54px] flex bg-white self-start">
                   <Image src="/email.svg" alt="email" width={24} height={24} />
                   <input
                     type="email"
@@ -79,7 +82,7 @@ export default function RootLayout({
                       height={15.75}
                     />
                   </div>
-                </div>
+                </div> */}
               </div>
               <div className="flex flex-col gap-[28.8px] text-gray">
                 <a href="" className="font-bold text-white">

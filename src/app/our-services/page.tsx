@@ -12,7 +12,7 @@ export default function OurServices() {
           </h2>
           <p className="small max-w-[584px] max-md:text-[14px] max-md:leading-[21px]">
             We offer a comprehensive range of tutoring services to support your
-            child's success. 
+            child{"'"}s success. 
           </p>
         </div>
         <Image

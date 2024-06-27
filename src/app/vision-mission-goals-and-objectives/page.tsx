@@ -149,7 +149,13 @@ export default function Page() {
         <div className="flex flex-col gap-[20px] items-center">
           <h2>OUR COMPANY PROFILE</h2>
           Get closer with us by downloading the softcopy here
-          <CustomButton>Download</CustomButton>
+          <a
+            href="/A-Z Company Profile.pdf"
+            download="A-Z Company Profile.pdf"
+            target="_blank"
+          >
+            <CustomButton>Download</CustomButton>
+          </a>
         </div>
       </section>
     </>

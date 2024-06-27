@@ -1,5 +1,4 @@
 /* eslint-disable react/no-unescaped-entities */
-import { ReactNode } from "react";
 
 export default function OneOnOneHomeTutoring() {
   return (
@@ -13,8 +12,8 @@ export default function OneOnOneHomeTutoring() {
       <ul>
         <li>
           <strong>WAEC (West African Examinations Council): </strong>Whether
-          your child is preparing for their INT/EXT WASSCE exams, we provide targeted instruction and practice to help
-          them excel.
+          your child is preparing for their INT/EXT WASSCE exams, we provide
+          targeted instruction and practice to help them excel.
           <br />
           <br />
         </li>

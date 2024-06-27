@@ -1,5 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import Image from "next/image";
+import Link from "next/link";
 import {
   HTMLAttributes,
   InputHTMLAttributes,
@@ -62,7 +63,7 @@ export function ConsultUs() {
   return (
     <div className="relative flex justify-center w-full">
       <div id="consult-us" className="absolute top-[-120px]" />
-      <div className="flex flex-wrap bg-white gap-[60px] gap-y-[16px] md:m-auto md:mb-[147px] mb-[147px] max-w-[1010px] px-[40px] py-[32px] rounded-[74px] items-center shadow-[0px_1px_22.8px_0px_#00000012] justify-center">
+      <div className="flex max-md:flex-col flex-wrap bg-white gap-[60px] gap-y-[16px] md:m-auto md:mb-[147px] mb-[147px] max-w-[1010px] max-md:px-0 px-[40px] py-[32px] rounded-[36px] md:rounded-[74px] items-center shadow-[0px_1px_22.8px_0px_#00000012] justify-center">
         <Image
           src="/customer-care-rep.png"
           alt="customer care representative"
@@ -79,7 +80,14 @@ export function ConsultUs() {
             Let's discuss your needs. We're
             <br className="md:hidden" /> here to help.
           </p>
-          <div className="flex flex-col gap-[20px]">
+          <iframe
+            src="https://docs.google.com/forms/d/e/1FAIpQLScYoBZ_0Jbm5gHU1VX-zieRtdM15SOehytpMgzUSeZvqLG5mg/viewform?embedded=true"
+            width="100%"
+            height="1050"
+          >
+            Loading…
+          </iframe>
+          {/*<div className="flex flex-col gap-[20px]">
             <CustomInput placeholder="Full name" />
             <CustomInput type="email" placeholder="Email address" />
             <CustomInput placeholder="Enter coupon" />
@@ -87,7 +95,6 @@ export function ConsultUs() {
             <CustomTextArea
               name=""
               id=""
-              // cols={30}
               rows={7.2}
               placeholder="Write your message here"
             />
@@ -100,8 +107,7 @@ export function ConsultUs() {
               height={80}
               className="self-end max-md:w-[60px]"
             />
-            {/*<p className="tiny text-primary2">Message Us on Whatsapp instead</p>*/}
-          </div>
+          </div>*/}
         </div>
       </div>
 
@@ -187,10 +193,31 @@ export function Faqs() {
           faq="How do you match learners with tutors?"
           answer="We carefully match tutors with learners based on their individual needs, learning style, and goals."
         ></FaqItem>
-        <FaqItem
-          faq="How do I get started with your services?"
-          answer="Fill out our application form here."
-        ></FaqItem>
+        <div className="flex bg-gray-blue p-[20px] md:p-[32px] rounded-[12px] justify-between gap-5">
+          <div className="flex flex-col gap-[12px]">
+            <h5 className="max-md:font-normal">
+              How do I get started with your services?
+            </h5>
+            <p className="tiny">
+              Fill out our application form{" "}
+              <Link href="/application-from" className="text-[blue]">
+                here
+              </Link>
+              .
+            </p>
+          </div>
+          <Image
+            src="/chevron.svg"
+            alt="dropdown"
+            width={25}
+            height={13.75}
+            className="max-md:w-[15px]"
+          />
+        </div>
+        {/* <FaqItem
+          faq=""
+          answer={``}
+        ></FaqItem> */}
         <FaqItem
           faq="How often are tutoring sessions held?"
           answer="Tutoring sessions can be scheduled as frequently or infrequently as needed, depending on the learner's needs."
@@ -251,17 +278,21 @@ export function ItemCard({
 export function CustomButton({
   children,
   secondary,
+  small,
   ...props
 }: Readonly<{
   secondary?: boolean;
+  small?: boolean;
   children: React.ReactNode;
 }>) {
   return (
     <div
-      className={`rounded-[45px] max-md:px-[32px] max-md:py-[12px] px-[50px] py-[20px] flex items-center justify-center leading-none ${
+      className={`rounded-[45px] max-md:px-[32px] max-md:py-[12px] flex items-center justify-center leading-none ${
         secondary
           ? "border-primary2 border-[2px] text-primary2 bg-white"
           : "bg-primary2 text-white"
+      } ${
+        small ? "px-[20px] py-[13px]" : "px-[50px] py-[20px]"
       } text-[24px] leading-[28.8px] max-md:text-[14px] max-md:leading-[19.2px] `}
       {...props}
     >
@@ -337,6 +368,56 @@ export function WordingItem({
       {...props}
     >
       {children}
+    </div>
+  );
+}
+
+export function WhatsappReviews() {
+  return (
+    <div className="flex gap-8">
+      <Image
+        alt="review"
+        src="/whatsapp-reviews/1.jpeg"
+        width={320}
+        height={1000}
+        className="rounded-[10px]"
+      />
+      <Image
+        alt="review"
+        src="/whatsapp-reviews/1.jpeg"
+        width={300}
+        height={1000}
+        className="rounded-[10px]"
+      />
+      <Image
+        alt="review"
+        src="/whatsapp-reviews/1.jpeg"
+        width={300}
+        height={1000}
+        className="rounded-[10px]"
+      />
+      <Image
+        alt="review"
+        src="/whatsapp-reviews/1.jpeg"
+        width={300}
+        height={1000}
+        className="rounded-[10px]"
+      />
+      <Image
+        alt="review"
+        src="/whatsapp-reviews/1.jpeg"
+        width={300}
+        height={1000}
+        className="rounded-[10px]"
+      />
+      <Image
+        alt="review"
+        src="/whatsapp-reviews/1.jpeg"
+        width={300}
+        height={1000}
+        className="rounded-[10px]"
+      />
+      <div className="w-8 text-[#00000000]">.</div>
     </div>
   );
 }

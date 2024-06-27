@@ -1,7 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
 import Image from "next/image";
-import { InputHTMLAttributes, TextareaHTMLAttributes } from "react";
-import { InputHTMLAttributes, TextareaHTMLAttributes } from "react";
 import {
   WordingItem,
   CustomButton,
@@ -10,8 +8,8 @@ import {
   CallToApply,
   Faqs,
   ConsultUs,
+  WhatsappReviews,
 } from "./components";
-import Link from "next/link";
 import Link from "next/link";
 
 export default function Home() {
@@ -31,11 +29,11 @@ export default function Home() {
             </p>
             <div className="flex gap-[48px] max-md:hidden">
               <Link href="#services">
-                <CustomButton>Learn More</CustomButton>
+                <CustomButton secondary>Learn More</CustomButton>
               </Link>
 
-              <Link href="#consult-us">
-                <CustomButton secondary>Consult Us</CustomButton>
+              <Link href="/application-form">
+                <CustomButton>Apply Now</CustomButton>
               </Link>
             </div>
           </div>
@@ -98,7 +96,7 @@ export default function Home() {
             for learning and helps learners achieve their academic goals.
           </p>
 
-          <div className="flex gap-[20px] text-[16px] leading-[19.2px] min-h-[137.3px] justify-center max-md:w-[176px] text-left">
+          <div className="flex max-md:flex-col gap-[20px] text-[16px] leading-[19.2px] min-h-[137.3px] justify-center max-md:w-[260px] text-left">
             <ItemCard>
               <Image
                 src="/proven-results.svg"
@@ -149,7 +147,7 @@ export default function Home() {
       <Link href="/vision-mission-goals-and-objectives">
         <section className="relative pt-[140px] pb-[85px] rounded-[12px] mb-[295px] m-auto flex flex-col gap-[60px] max-w-[1100px] items-center min-h-[469px] overflow-hidden">
           <Image
-            className="absolute top-[-150px] bg-secondary -z-10"
+            className="absolute md:top-[-150px] bg-secondary -z-10 max-md:h-full"
             src="/visions-and-missions.png"
             alt="visions-and-missions"
             width={1100}
@@ -216,8 +214,8 @@ export default function Home() {
         </WordingItem>
       </section>
 
-      <section className="relative flex max-md:flex-col gap-[30px] md:gap-[82px] md:pl-[150px] py-[94px] md:pt-[200px] md:pb-[170px] md:pr-[80px] items-center md:overflow-hidden">
-        <WordingItem className="max-w-[504px] max-md:text-center max-md:gap-[16px]">
+      <section className="relative flex max-md:flex-col gap-[30px] md:gap-[82px] md:w-[1116px] md:pt-[200px] md:pb-[170px] items-center md:overflow-hidden md:m-auto">
+        <WordingItem className="max-w-[504px] max-md:mt-20 max-md:text-center max-md:gap-[16px]">
           <h4>
             See what other learners & parents are saying about our services
           </h4>
@@ -226,19 +224,25 @@ export default function Home() {
             saying about their child's progress.
           </p>
           <div className="max-md:hidden">
-            <CustomButton>See all testimonials</CustomButton>
+            <Link href={"/application-form"}>
+              <CustomButton>Apply Now</CustomButton>
+            </Link>
           </div>
         </WordingItem>
 
         <Image
-          className="max-md:hidden absolute top-[170px] left-[690px] z-[-1]"
+          className="max-md:hidden absolute top-[170px] left-[520px] z-[-1]"
           src="/star.png"
           alt="star"
           width="114"
           height="114"
         />
 
-        <div className="relative rounded-[10px] max-w-[617px] py-[42px] pl-[30px] md:bg-gray-blue bg-[#FEFEFED1] flex gap-[23px] md:overflow-visible w-[calc(100%_+_38px)] overflow-scroll items-center self-start max-md:shadow-sm">
+        <div className="relative rounded-[10px] max-w-[617px] p-10 md:bg-gray-blue bg-[#FEFEFED1] flex gap-[23px] w-[calc(100%_+_38px)] overflow-scroll items-center self-start max-md:shadow-sm">
+          <WhatsappReviews />
+        </div>
+
+        {/* <div className="relative rounded-[10px] max-w-[617px] py-[42px] pl-[30px] md:bg-gray-blue bg-[#FEFEFED1] flex gap-[23px] md:overflow-visible w-[calc(100%_+_38px)] overflow-scroll items-center self-start max-md:shadow-sm">
           <TestimonialCard
             testimony="Lorem ipsum dolor sit amet consectetur. Tortor sit elementum sit ultrices nisl orci consectetur. Urna nunc facilisis urna laoreet blandit felis rutrum."
             testifier="Tobi Nwafor"
@@ -255,9 +259,11 @@ export default function Home() {
           <div className="absolute right-[15px] bg-primary2 max-w-[60px] aspect-square rounded-full flex items-center justify-center max-md:hidden">
             <Image src="/arrow.svg" alt="next" width={18.75} height={15.75} />
           </div>
-        </div>
-        <div className="md:hidden">
-          <CustomButton>See all testimonials</CustomButton>
+        </div> */}
+        <div className="md:hidden mb-20">
+          <Link href={"/application-form"}>
+            <CustomButton>Apply Now</CustomButton>
+          </Link>
         </div>
       </section>
 

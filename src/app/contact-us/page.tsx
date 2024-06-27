@@ -1,11 +1,10 @@
 /* eslint-disable react/no-unescaped-entities */
 import Image from "next/image";
-import { ReactNode } from "react";
 
 export default function OneOnOneHomeTutoring() {
   return (
     <>
-      <section className="relative max-w-[1160px] m-auto mt-[136px] mb-[313px]">
+      {/* <section className="relative max-w-[1160px] m-auto mt-[136px] mb-[313px]">
         <h1 className="text-[64px] mb-[62px]">Contact Us</h1>
         <Image
           src="/contact-ppl.png"
@@ -33,8 +32,8 @@ export default function OneOnOneHomeTutoring() {
 
         
         </div>
-      </section>
-      <section className="max-w-[983px] m-auto mb-[238px] flex flex-row justify-center gap-[80px] flex-wrap font-bold">
+      </section> */}
+      <section className="max-w-[983px] m-auto mt-10 mb-[238px] flex flex-row justify-center gap-[80px] flex-wrap font-bold">
         <Contact iconSrc="/whatsapp-contact.svg">+234 816 142 8680</Contact>
         <Contact iconSrc="/email-contact.svg">
           atoznewagetutors@gmail.com

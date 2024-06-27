@@ -14,8 +14,8 @@ export default function Testimonials() {
       <div className="max-w-[1010px] m-auto mt-[83px] md:mt-[157px] mb-[72px]">
         <h2 className="md:mb-[72px] mb-[23px]">What our clients say</h2>
         <p className="text-[20px] leading-[24px]">
-          Discover how we've helped others achieve their goals. Read real
-          stories of success from our learners and parents.
+          Discover how we{"'"}ve helped others achieve their goals. Read stories
+          of successes from our learners and parents.
         </p>
       </div>
       {/* <section className="w-[1174px] mb-[72px] m-auto flex justify-between items-center">

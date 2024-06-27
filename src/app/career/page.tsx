@@ -18,7 +18,7 @@ export default function Career() {
           Join our team
         </h2>
       </section>
-      <section className="m-auto w-[1116px] mb-[100px]">
+      <section className="m-auto md:w-[1116px] mb-[256px]">
         At A-Z New Age Tutors, we're dedicated to empowering learners of all
         ages to achieve their academic goals. We believe in fostering a
         supportive and collaborative learning environment where both learners
@@ -60,9 +60,17 @@ export default function Career() {
             <br />
           </li>
         </ul>
-        We encourage you to submit your resume and cover letter below:
+        We encourage you to submit your resume and cover letter at the google
+        form (you'd have to login){" "}
+        <a
+          href="https://forms.gle/Q8vFL3PLF6Ysn4378"
+          target="_blank"
+          className="text-[blue]"
+        >
+          here
+        </a>
       </section>
-      <section className="m-auto w-[1147px] p-[16px] bg-gray-blue flex flex-col gap-[50px] mb-[256px] rounded-[12px]">
+      {/* <section className="m-auto w-[1147px] p-[16px] bg-gray-blue flex flex-col gap-[50px] mb-[256px] rounded-[12px]">
         <div className="h-[71px] flex items-center justify-between">
           <h4>Apply</h4>
         </div>
@@ -116,7 +124,7 @@ export default function Career() {
 
           <CustomButton>Submit</CustomButton>
         </div>
-      </section>
+      </section> */}
     </>
   );
 }
