@@ -169,10 +169,11 @@ export function CallToApply() {
           tutors. Empower learners and share your knowledge. 
         </p>
       </WordingItem>
-
-      <CustomButton secondary>
-        <h5 className="text-primary2 font-bold">Apply</h5>
-      </CustomButton>
+      <Link href="/career">
+        <CustomButton secondary>
+          <h5 className="text-primary2 font-bold">Apply</h5>
+        </CustomButton>
+      </Link>
     </div>
   );
 }
