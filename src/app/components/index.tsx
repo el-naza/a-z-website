@@ -382,40 +382,54 @@ export function WhatsappReviews() {
         width={320}
         height={1000}
         className="rounded-[10px]"
+        objectFit="cover"
       />
       <Image
         alt="review"
-        src="/whatsapp-reviews/1.jpeg"
+        src="/whatsapp-reviews/2.jpeg"
         width={300}
         height={1000}
+        objectFit="cover"
         className="rounded-[10px]"
       />
       <Image
         alt="review"
-        src="/whatsapp-reviews/1.jpeg"
+        src="/whatsapp-reviews/3.jpeg"
         width={300}
         height={1000}
         className="rounded-[10px]"
+        objectFit="cover"
       />
       <Image
         alt="review"
-        src="/whatsapp-reviews/1.jpeg"
+        src="/whatsapp-reviews/4.jpeg"
         width={300}
         height={1000}
         className="rounded-[10px]"
+        objectFit="cover"
       />
       <Image
         alt="review"
-        src="/whatsapp-reviews/1.jpeg"
+        src="/whatsapp-reviews/5.jpeg"
         width={300}
         height={1000}
         className="rounded-[10px]"
+        objectFit="cover"
       />
       <Image
         alt="review"
-        src="/whatsapp-reviews/1.jpeg"
+        src="/whatsapp-reviews/6.jpeg"
         width={300}
         height={1000}
+        className="rounded-[10px]"
+        objectFit="cover"
+      />
+      <Image
+        alt="review"
+        src="/whatsapp-reviews/7.jpeg"
+        width={300}
+        height={1000}
+        objectFit="cover"
         className="rounded-[10px]"
       />
       <div className="w-8 text-[#00000000]">.</div>
