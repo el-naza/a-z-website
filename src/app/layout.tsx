@@ -108,7 +108,7 @@ export default function RootLayout({
               </div>
             </div>
           </section>
-          <section className="pt-[23.46px] pb-[22.54px] flex flex-col items-center gap-[7px]">
+          <section className="pt-[23.46px] pb-[22.54px] flex flex-col items-center gap-[16px]">
             <div className="flex gap-[28px]">
               <Link
                 href={
