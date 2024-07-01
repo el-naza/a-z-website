@@ -100,7 +100,7 @@ export default function RootLayout({
                   href="/vision-mission-goals-and-objectives"
                   className="font-bold text-white"
                 >
-                  vision-mission-goals-and-objectives Company
+                  Company
                 </a>
                 <a href="/career">Career</a>
                 {/* <a href="">Our team</a> */}
