@@ -85,20 +85,26 @@ export default function RootLayout({
                 </div> */}
               </div>
               <div className="flex flex-col gap-[28.8px] text-gray">
-                <a href="" className="font-bold text-white">
+                <a
+                  href="/vision-mission-goals-and-objectives"
+                  className="font-bold text-white"
+                >
                   About
                 </a>
-                <a href="">Our Team</a>
-                <a href="">Blog</a>
-                <a href="">Our services</a>
+                <a href="/our-team">Our team</a>
+                {/* <a href="">What we do</a> */}
+                <a href="/our-services">Our services</a>
               </div>
               <div className="flex flex-col gap-[28.8px] text-gray">
-                <a href="" className="font-bold text-white">
-                  Company
+                <a
+                  href="/vision-mission-goals-and-objectives"
+                  className="font-bold text-white"
+                >
+                  vision-mission-goals-and-objectives Company
                 </a>
-                <a href="">Career</a>
-                <a href="">Our team</a>
-                <a href="">Contact</a>
+                <a href="/career">Career</a>
+                {/* <a href="">Our team</a> */}
+                <a href="/contact-us">Contact</a>
               </div>
             </div>
           </section>
