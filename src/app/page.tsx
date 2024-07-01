@@ -231,7 +231,7 @@ export default function Home() {
         </WordingItem>
 
         <Image
-          className="max-md:hidden absolute top-[170px] left-[520px] z-[-1]"
+          className="max-md:hidden absolute top-[170px] left-[530px] z-[-1]"
           src="/star.png"
           alt="star"
           width="114"
