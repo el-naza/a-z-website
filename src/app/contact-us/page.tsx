@@ -1,5 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import Image from "next/image";
+import Link from "next/link";
 
 export default function OneOnOneHomeTutoring() {
   return (
@@ -34,13 +35,34 @@ export default function OneOnOneHomeTutoring() {
         </div>
       </section> */}
       <section className="max-w-[983px] m-auto mt-10 mb-[238px] flex flex-row justify-center gap-[80px] flex-wrap font-bold">
-        <Contact iconSrc="/whatsapp-contact.svg">+234 816 142 8680</Contact>
-        <Contact iconSrc="/email-contact.svg">
-          atoznewagetutors@gmail.com
-        </Contact>
-        <Contact iconSrc="/fb-contact.svg">A-Z New Age Tutors</Contact>
-        <Contact iconSrc="/x-contact.svg">A2zNewageTutors</Contact>
-        <Contact iconSrc="/insta-contact.svg">atoznewagetutorsnigeria</Contact>
+        <Link
+          href="https://wa.me/2348161428680?text=Hi!%20I%20saw%20your%20link%20on%20your%20website%20and%20wanted%20to%20chat"
+          target="_blank"
+        >
+          <Contact iconSrc="/whatsapp-contact.svg">+234 816 142 8680</Contact>
+        </Link>
+        <Link href="mailto:atoznewagetutors@gmail.com" target="_blank">
+          <Contact iconSrc="/email-contact.svg">
+            atoznewagetutors@gmail.com
+          </Contact>
+        </Link>
+        <Link
+          href="https://web.facebook.com/p/A-Z-New-Age-Tutors-100064703483607/"
+          target="_blank"
+        >
+          <Contact iconSrc="/fb-contact.svg">A-Z New Age Tutors</Contact>
+        </Link>
+        <Link href="https://x.com/A2zNewageTutors" target="_blank">
+          <Contact iconSrc="/x-contact.svg">A2zNewageTutors</Contact>
+        </Link>
+        <Link
+          href="https://www.instagram.com/atoznewagetutorsnigeria"
+          target="_blank"
+        >
+          <Contact iconSrc="/insta-contact.svg">
+            atoznewagetutorsnigeria
+          </Contact>
+        </Link>
       </section>
     </>
   );

@@ -104,19 +104,57 @@ export default function RootLayout({
           </section>
           <section className="pt-[23.46px] pb-[22.54px] flex flex-col items-center gap-[7px]">
             <div className="flex gap-[28px]">
-              <Image
-                src="/facebook.svg"
-                alt="facebook"
-                width={40}
-                height={40}
-              />
-              <Image src="/x.svg" alt="x" width={40} height={40} />
-              <Image
-                src="/instagram.svg"
-                alt="instagram"
-                width={40}
-                height={40}
-              />
+              <Link
+                href={
+                  "https://web.facebook.com/p/A-Z-New-Age-Tutors-100064703483607/"
+                }
+                target="_blank"
+              >
+                <Image
+                  src="/facebook.svg"
+                  alt="facebook"
+                  width={40}
+                  height={40}
+                />
+              </Link>
+              <Link href={"https://x.com/A2zNewageTutors"} target="_blank">
+                <Image src="/x.svg" alt="x" width={40} height={40} />
+              </Link>
+              <Link
+                href={"https://www.instagram.com/atoznewagetutorsnigeria"}
+                target="_blank"
+              >
+                <Image
+                  src="/instagram.svg"
+                  alt="instagram"
+                  width={40}
+                  height={40}
+                />
+              </Link>
+              <Link
+                href={"https://www.linkedin.com/company/a-to-z-home-tutoring/"}
+                target="_blank"
+              >
+                <Image
+                  src="/linkedin.svg"
+                  alt="LinkedIn Company Account"
+                  width={40}
+                  height={40}
+                />
+              </Link>
+              <Link
+                href={
+                  "https://www.youtube.com/channel/UCAX8WocEdxK_5vZ-3Bz32RA"
+                }
+                target="_blank"
+              >
+                <Image
+                  src="/youtube.svg"
+                  alt="youtube channel"
+                  width={40}
+                  height={40}
+                />
+              </Link>
             </div>
             <div className="flex gap-[4.5px] copyright items-center tracking-[0.12em]">
               <Image
