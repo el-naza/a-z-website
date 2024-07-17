@@ -2,6 +2,7 @@
 import Image from "next/image";
 import { ReactNode } from "react";
 import { CustomButton } from "../components";
+import Link from "next/link";
 
 export default function Career() {
   return (
@@ -62,13 +63,20 @@ export default function Career() {
         </ul>
         We encourage you to submit your resume and cover letter at the google
         form (you'd have to login){" "}
-        <a
-          href="https://forms.gle/Q8vFL3PLF6Ysn4378"
-          target="_blank"
-          className="text-[blue]"
-        >
-          here
-        </a>
+        <Link href="https://forms.gle/Q8vFL3PLF6Ysn4378">
+          <div
+            className="md:w-[544px] w-[218px] m-auto mt-[60px] md:mb-[150px] mb-[60px] rounded-full md:h-[100px] h-[69px] leading-none p-[4px] pr-[4.5px] [background-image:linear-gradient(180deg,_#50E4ED_0%,_#3492D6_100%)] text-primary2 bg-white text-[24px]"
+            // style={{
+            //   backgroundImage: "linear-gradient(180deg, #50E4ED 0%, #3492D6 100%)",
+            // }}
+          >
+            <span className="h-full w-full rounded-full  bg-white flex items-center justify-center">
+              <span className="[background-image:linear-gradient(180deg,_#50E4ED_0%,_#3492D6_100%)] text-[transparent] bg-clip-text">
+                Apply Here
+              </span>
+            </span>
+          </div>
+        </Link>
       </section>
       {/* <section className="m-auto w-[1147px] p-[16px] bg-gray-blue flex flex-col gap-[50px] mb-[256px] rounded-[12px]">
         <div className="h-[71px] flex items-center justify-between">
