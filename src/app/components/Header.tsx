@@ -77,7 +77,7 @@ export function Header() {
           </NavLink> */}
           <NavLink href="/application-form">
             {/* <Link href="/application-form"> */}
-            <CustomButton>Apply Now</CustomButton>
+            <CustomButton>Enroll now</CustomButton>
             {/* </Link> */}
           </NavLink>
         </div>
@@ -127,7 +127,7 @@ export function Header() {
             <NavLink href="/application-form">
               {/* <Link href="/application-form"> */}
               <CustomButton small>
-                <span className="text-[20px] font-semibold">Apply now</span>
+                <span className="text-[20px] font-semibold">Enroll now</span>
               </CustomButton>
               {/* </Link> */}
             </NavLink>

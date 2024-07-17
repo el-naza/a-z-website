@@ -33,7 +33,7 @@ export default function Home() {
               </Link>
 
               <Link href="/application-form">
-                <CustomButton>Apply Now</CustomButton>
+                <CustomButton>Enroll Now</CustomButton>
               </Link>
             </div>
           </div>
@@ -225,7 +225,7 @@ export default function Home() {
           </p>
           <div className="max-md:hidden">
             <Link href={"/application-form"}>
-              <CustomButton>Apply Now</CustomButton>
+              <CustomButton>Enroll Now</CustomButton>
             </Link>
           </div>
         </WordingItem>
@@ -262,7 +262,7 @@ export default function Home() {
         </div> */}
         <div className="md:hidden mb-20">
           <Link href={"/application-form"}>
-            <CustomButton>Apply Now</CustomButton>
+            <CustomButton>Enroll Now</CustomButton>
           </Link>
         </div>
       </section>
