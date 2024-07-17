@@ -7,7 +7,6 @@ import {
   TestimonialCard,
   CallToApply,
   Faqs,
-  ConsultUs,
   WhatsappReviews,
 } from "./components";
 import Link from "next/link";
