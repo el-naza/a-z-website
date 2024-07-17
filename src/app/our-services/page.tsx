@@ -33,7 +33,7 @@ export default function OurServices() {
           <OfferItem title="Core subjects for all grades" />
           <OfferItem title="Montessori and EYFS Education" />
           <OfferItem title="SAT, IGCSE, IELTS exams" />
-          <OfferItem title="WAEC, JAMB AND NECO (GCE)" />
+          <OfferItem title="Standardized Exams" />
           <OfferItem title="Coding for kids and teens" />
           <OfferItem title="Special Needs Education" />
           <OfferItem title="Nigerian Languages" />
