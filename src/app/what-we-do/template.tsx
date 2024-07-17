@@ -46,7 +46,8 @@ export default function WhatWeDoLayout({
           <div className="absolute flex h-full z-[-10] w-full items-center justify-center opacity-[60%] bg-[#0c0c0c]" />
           <h1 className="md:text-[64px] md:leading-[76.8px] w-[635px] text-center text-white">
             {routeTitle[pathName.split("/").at(-1)!]}
-            {pathName.includes("foreign") && (
+            {(pathName.includes("foreign") ||
+              pathName.includes("special-needs-education")) && (
               <span className="text-[14px] text-gray">
                 <br />
                 Image from freepik
