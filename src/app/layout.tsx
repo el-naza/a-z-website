@@ -3,7 +3,7 @@ import { Anybody, Ubuntu, Roboto, Inter } from "next/font/google";
 import "./globals.css";
 import Image from "next/image";
 import Link from "next/link";
-import { ConsultUs } from "./components";
+import { ConsultUs } from "./components/ConsultUs";
 import { Header } from "./components/Header";
 
 const anybody = Anybody({
