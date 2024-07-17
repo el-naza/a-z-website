@@ -15,7 +15,7 @@ export default function Career() {
           className="mb-[42px] bg-black w-full"
         />
         <h2 className="absolute top-0 bottom-0 left-0 right-0 text-white flex justify-center items-center">
-          Join our team
+          Become A Tutor
         </h2>
       </section>
       <section className="m-auto md:w-[1116px] mb-[256px]">
