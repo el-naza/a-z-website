@@ -303,7 +303,7 @@ export function WhatsappReviews() {
             alt="review"
             src="/whatsapp-reviews/1.jpeg"
             width={320}
-            height={1000}
+            height={150}
             className="rounded-[10px]"
             objectFit="cover"
           />
@@ -311,7 +311,7 @@ export function WhatsappReviews() {
             alt="review"
             src="/whatsapp-reviews/2.jpeg"
             width={300}
-            height={1000}
+            height={150}
             objectFit="cover"
             className="rounded-[10px]"
           />
@@ -319,14 +319,14 @@ export function WhatsappReviews() {
             alt="review"
             src="/whatsapp-reviews/3.jpeg"
             width={450}
-            height={1000}
+            height={150}
             className="rounded-[10px]"
           />
           <Image
             alt="review"
             src="/whatsapp-reviews/4.jpeg"
             width={450}
-            height={1000}
+            height={150}
             className="rounded-[10px]"
             objectFit="cover"
           />
@@ -334,7 +334,7 @@ export function WhatsappReviews() {
             alt="review"
             src="/whatsapp-reviews/5.jpeg"
             width={300}
-            height={1000}
+            height={150}
             className="rounded-[10px]"
             objectFit="cover"
           />
@@ -342,7 +342,7 @@ export function WhatsappReviews() {
             alt="review"
             src="/whatsapp-reviews/6.jpeg"
             width={300}
-            height={1000}
+            height={150}
             className="rounded-[10px]"
             objectFit="cover"
           />
@@ -350,7 +350,7 @@ export function WhatsappReviews() {
             alt="review"
             src="/whatsapp-reviews/7.jpeg"
             width={300}
-            height={1000}
+            height={150}
             objectFit="cover"
             className="rounded-[10px]"
           />
@@ -365,7 +365,7 @@ export function WhatsappReviews() {
   //       alt="review"
   //       src="/whatsapp-reviews/1.jpeg"
   //       width={320}
-  //       height={1000}
+  //       height={150}
   //       className="rounded-[10px]"
   //       objectFit="cover"
   //     />
@@ -373,7 +373,7 @@ export function WhatsappReviews() {
   //       alt="review"
   //       src="/whatsapp-reviews/2.jpeg"
   //       width={300}
-  //       height={1000}
+  //       height={150}
   //       objectFit="cover"
   //       className="rounded-[10px]"
   //     />
@@ -381,7 +381,7 @@ export function WhatsappReviews() {
   //       alt="review"
   //       src="/whatsapp-reviews/3.jpeg"
   //       width={300}
-  //       height={1000}
+  //       height={150}
   //       className="rounded-[10px]"
   //       objectFit="cover"
   //     />
@@ -389,7 +389,7 @@ export function WhatsappReviews() {
   //       alt="review"
   //       src="/whatsapp-reviews/4.jpeg"
   //       width={300}
-  //       height={1000}
+  //       height={150}
   //       className="rounded-[10px]"
   //       objectFit="cover"
   //     />
@@ -397,7 +397,7 @@ export function WhatsappReviews() {
   //       alt="review"
   //       src="/whatsapp-reviews/5.jpeg"
   //       width={300}
-  //       height={1000}
+  //       height={150}
   //       className="rounded-[10px]"
   //       objectFit="cover"
   //     />
@@ -405,7 +405,7 @@ export function WhatsappReviews() {
   //       alt="review"
   //       src="/whatsapp-reviews/6.jpeg"
   //       width={300}
-  //       height={1000}
+  //       height={150}
   //       className="rounded-[10px]"
   //       objectFit="cover"
   //     />
@@ -413,7 +413,7 @@ export function WhatsappReviews() {
   //       alt="review"
   //       src="/whatsapp-reviews/7.jpeg"
   //       width={300}
-  //       height={1000}
+  //       height={150}
   //       objectFit="cover"
   //       className="rounded-[10px]"
   //     />
