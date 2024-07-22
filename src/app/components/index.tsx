@@ -208,10 +208,10 @@ export function CustomButton({
 }>) {
   return (
     <div
-      className={`rounded-[45px] max-md:px-[32px] max-md:py-[12px] flex items-center justify-center leading-none ${
+      className={`rounded-[45px] flex items-center justify-center leading-none ${
         secondary
-          ? "border-primary2 border-[2px] text-primary2 bg-white"
-          : "bg-primary2 text-white"
+          ? "border-primary2 border-[2px] text-primary2 bg-white max-md:px-[20.5px] max-md:py-[10.5px]"
+          : "bg-primary2 text-white max-md:px-[22px] max-md:py-[12px]"
       } ${
         small ? "px-[20px] py-[13px]" : "px-[50px] py-[20px]"
       } text-[24px] leading-[28.8px] max-md:text-[14px] max-md:leading-[19.2px] `}
