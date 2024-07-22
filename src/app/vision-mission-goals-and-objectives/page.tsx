@@ -4,7 +4,7 @@ import { CustomButton } from "@/app/components";
 export default function Page() {
   return (
     <>
-      <section className="flex flex-wrap gap-[71px] mt-[67px] mb-[80px] max-w-[1024px] m-auto items-center">
+      <section className="flex max-md:flex-wrap gap-[71px] mt-[67px] mb-[80px] max-w-[1024px] m-auto items-center">
         <Image
           className=""
           src="/our-vision.svg"
@@ -22,7 +22,7 @@ export default function Page() {
         </div>
       </section>
 
-      <section className="flex flex-wrap gap-[71px] mb-[80px] max-w-[1024px] m-auto items-center">
+      <section className="flex max-md:flex-wrap gap-[71px] mb-[80px] max-w-[1024px] m-auto items-center">
         <div className="max-md:text-[16px] flex flex-col gap-[20px]">
           <h1 className="text-[64px] max-md:text-3xl leading-none">
             Our Mission
@@ -42,7 +42,7 @@ export default function Page() {
         />
       </section>
 
-      <section className="flex flex-wrap gap-[71px] mb-[80px] max-w-[1024px] m-auto items-center">
+      <section className="flex max-md:flex-wrap gap-[71px] mb-[80px] max-w-[1024px] m-auto items-center">
         <Image
           className=""
           src="/our-goals.svg"
@@ -72,7 +72,7 @@ export default function Page() {
         </div>
       </section>
 
-      <section className="flex flex-wrap gap-[71px] mb-[80px] max-w-[1024px] m-auto items-center">
+      <section className="flex max-md:flex-wrap gap-[71px] mb-[80px] max-w-[1024px] m-auto items-center">
         <div className="max-md:text-[16px] flex flex-col gap-[20px]">
           <h1 className="text-[64px] max-md:text-3xl leading-none">Our Aims</h1>
           1. To create a nurturing environment that encourages curiosity,
@@ -103,7 +103,7 @@ export default function Page() {
           height={345}
         />
       </section>
-      <section className="flex flex-wrap gap-[71px] mb-[80px] max-w-[1024px] m-auto items-center">
+      <section className="flex max-md:flex-wrap gap-[71px] mb-[80px] max-w-[1024px] m-auto items-center">
         <div className="max-md:text-[16px] flex flex-col gap-[20px]">
           <h1 className="text-[64px] max-md:text-3xl leading-none">
             Our Objectives
@@ -146,7 +146,7 @@ export default function Page() {
           height={345}
         />
       </section>
-      <section className="flex flex-wrap flex-col gap-[71px] mb-[80px] max-w-[1024px] m-auto items-center">
+      <section className="flex max-md:flex-wrap flex-col gap-[71px] mb-[80px] max-w-[1024px] m-auto items-center">
         <Image
           className="w-full rounded-[12px]"
           src="/company-profile.svg"
