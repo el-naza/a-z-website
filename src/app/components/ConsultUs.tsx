@@ -65,7 +65,7 @@ export function ConsultUs() {
         alt="ellipse"
         width={94}
         height={94}
-        className="absolute -top-[75px] -left-[38px] -z-[10] max-md:-top-[60px] max-md:h-[60px] max-md:w-[60px] max-md:-left-[30px]"
+        className="absolute -top-[75px] -left-[38px] -z-[10] max-md:-top-[60px] max-md:h-[60px] max-md:w-[60px] max-md:-left-[35px]"
       />
 
       <Image
@@ -73,7 +73,7 @@ export function ConsultUs() {
         alt="measure"
         width={54}
         height={94}
-        className="absolute top-[60px] -right-[36.7px] -z-[10] max-md:top-[60px] max-md:h-[50px] max-md:w-[50px] max-md:-right-[70px]"
+        className="absolute top-[60px] -right-[36.7px] -z-[10] max-md:top-[60px] max-md:h-[50px] max-md:w-[50px] max-md:-right-[35px]"
       />
 
       <Image
@@ -81,7 +81,8 @@ export function ConsultUs() {
         alt="ellipse"
         width={94}
         height={94}
-        className="absolute top-[165px] -right-[36.7px] -z-[10] max-md:top-[120px] max-md:h-[60px] max-md:w-[60px] max-md:-right-[70px]"
+        className="absolute top-[165px] -right-[36.7px] -z-[10] max-md:top-[120px] max-md:h-[60px] max-md:w-[60px] max-md:-right-[35px]"
+        // className="absolute top-[165px] -right-[36.7px] -z-[10] max-md:top-[120px] max-md:h-[60px] max-md:w-[60px] max-md:-right-[70px]"
       />
     </div>
   );
