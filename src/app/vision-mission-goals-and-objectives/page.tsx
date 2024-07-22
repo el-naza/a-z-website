@@ -4,7 +4,7 @@ import { CustomButton } from "@/app/components";
 export default function Page() {
   return (
     <>
-      <section className="flex gap-[71px] mt-[67px] mb-[80px] max-w-[1024px] m-auto items-center">
+      <section className="flex flex-wrap gap-[71px] mt-[67px] mb-[80px] max-w-[1024px] m-auto items-center">
         <Image
           className=""
           src="/our-vision.svg"
@@ -12,17 +12,21 @@ export default function Page() {
           width={318}
           height={345}
         />
-        <div className="flex flex-col gap-[20px]">
-          <h1 className="text-[64px]">Our Vision</h1>
+        <div className="max-md:text-[16px] flex flex-col gap-[20px]">
+          <h1 className="text-[64px] max-md:text-3xl leading-none">
+            Our Vision
+          </h1>
           Empowering learners to reach their full potential through
           personalized, one-on-one tutoring services that foster a lifelong love
           for learning and academic success.
         </div>
       </section>
 
-      <section className="flex gap-[71px] mb-[80px] max-w-[1024px] m-auto items-center">
-        <div className="flex flex-col gap-[20px]">
-          <h1 className="text-[64px]">Our Mission</h1>
+      <section className="flex flex-wrap gap-[71px] mb-[80px] max-w-[1024px] m-auto items-center">
+        <div className="max-md:text-[16px] flex flex-col gap-[20px]">
+          <h1 className="text-[64px] max-md:text-3xl leading-none">
+            Our Mission
+          </h1>
           Delivering exceptional learner-centered tutoring experiences that
           cater to each individual{"'"}s unique learning needs, goals, and
           learning style; in the comfort of their homes. We strive to create a
@@ -38,7 +42,7 @@ export default function Page() {
         />
       </section>
 
-      <section className="flex gap-[71px] mb-[80px] max-w-[1024px] m-auto items-center">
+      <section className="flex flex-wrap gap-[71px] mb-[80px] max-w-[1024px] m-auto items-center">
         <Image
           className=""
           src="/our-goals.svg"
@@ -46,8 +50,10 @@ export default function Page() {
           width={318}
           height={345}
         />
-        <div className="flex flex-col gap-[20px]">
-          <h1 className="text-[64px]">Our Goals</h1>
+        <div className="max-md:text-[16px] flex flex-col gap-[20px]">
+          <h1 className="text-[64px] max-md:text-3xl leading-none">
+            Our Goals
+          </h1>
           1. To provide tailored tutoring services that lead to significant
           improvements in academic performance and confidence.
           <br />
@@ -66,9 +72,9 @@ export default function Page() {
         </div>
       </section>
 
-      <section className="flex gap-[71px] mb-[80px] max-w-[1024px] m-auto items-center">
-        <div className="flex flex-col gap-[20px]">
-          <h1 className="text-[64px]">Our Aims</h1>
+      <section className="flex flex-wrap gap-[71px] mb-[80px] max-w-[1024px] m-auto items-center">
+        <div className="max-md:text-[16px] flex flex-col gap-[20px]">
+          <h1 className="text-[64px] max-md:text-3xl leading-none">Our Aims</h1>
           1. To create a nurturing environment that encourages curiosity,
           creativity, and critical thinking.
           <br />
@@ -97,9 +103,11 @@ export default function Page() {
           height={345}
         />
       </section>
-      <section className="flex gap-[71px] mb-[80px] max-w-[1024px] m-auto items-center">
-        <div className="flex flex-col gap-[20px]">
-          <h1 className="text-[64px]">Our Objectives</h1>
+      <section className="flex flex-wrap gap-[71px] mb-[80px] max-w-[1024px] m-auto items-center">
+        <div className="max-md:text-[16px] flex flex-col gap-[20px]">
+          <h1 className="text-[64px] max-md:text-3xl leading-none">
+            Our Objectives
+          </h1>
           1. To achieve a 25% increase in learners academic performance and
           confidence within the first 6 months of tutoring.
           <br />
@@ -138,7 +146,7 @@ export default function Page() {
           height={345}
         />
       </section>
-      <section className="flex flex-col gap-[71px] mb-[80px] max-w-[1024px] m-auto items-center">
+      <section className="flex flex-wrap flex-col gap-[71px] mb-[80px] max-w-[1024px] m-auto items-center">
         <Image
           className="w-full rounded-[12px]"
           src="/company-profile.svg"
@@ -146,7 +154,7 @@ export default function Page() {
           width={318}
           height={345}
         />
-        <div className="flex flex-col gap-[20px] items-center">
+        <div className="max-md:text-[16px] flex flex-col gap-[20px] items-center">
           <h2>OUR COMPANY PROFILE</h2>
           Get closer with us by downloading the softcopy here
           <a
