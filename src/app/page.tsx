@@ -144,7 +144,7 @@ export default function Home() {
       </section>
 
       <Link href="/vision-mission-goals-and-objectives">
-        <section className="relative pt-[140px] pb-[85px] rounded-[12px] mb-[295px] m-auto flex flex-col gap-[60px] max-w-[1100px] items-center min-h-[469px] overflow-hidden">
+        <section className="relative pt-[140px] pb-[85px] rounded-[12px] md:mb-[295px] mb-[110px] m-auto flex flex-col gap-[60px] max-w-[1100px] items-center min-h-[469px] overflow-hidden">
           <Image
             className="absolute md:top-[-150px] bg-secondary -z-10 max-md:h-full max-md:top-0"
             src="/visions-and-missions.png"
