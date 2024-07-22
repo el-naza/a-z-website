@@ -22,6 +22,20 @@ const config: Config = {
         ubuntu: "var(--font-ubuntu)",
         inter: "var(--font-inter)",
       },
+      keyframes: {
+        "marquee-x": {
+          from: { transform: "translateX(0)" },
+          to: { transform: "translateX(calc(-100% - var(--gap)))" },
+        },
+        "marquee-y": {
+          from: { transform: "translateY(0)" },
+          to: { transform: "translateY(calc(-100% - var(--gap)))" },
+        },
+      },
+      animation: {
+        "marquee-horizontal": "marquee-x var(--duration) infinite linear",
+        "marquee-vertical": "marquee-y var(--duration) linear infinite",
+      },
     },
     colors: {
       white: "#FEFEFE",
@@ -34,7 +48,6 @@ const config: Config = {
       gray: "#AFAFAF",
       gray2: "#F3F3F3",
       "gray-blue": "#EDF3F3",
-      
     },
   },
   plugins: [],

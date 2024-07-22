@@ -237,9 +237,9 @@ export default function Home() {
           height="114"
         />
 
-        <div className="relative rounded-[10px] max-w-[617px] p-10 md:bg-gray-blue bg-[#FEFEFED1] flex gap-[23px] w-[calc(100%_+_38px)] overflow-scroll items-center self-start max-md:shadow-sm">
-          <WhatsappReviews />
-        </div>
+        {/* <div className="relative rounded-[10px] max-w-[617px] p-10 md:bg-gray-blue bg-[#FEFEFED1] flex gap-[23px] w-[calc(100%_+_38px)] overflow-scroll items-center self-start max-md:shadow-sm"> */}
+        <WhatsappReviews />
+        {/* </div> */}
 
         {/* <div className="relative rounded-[10px] max-w-[617px] py-[42px] pl-[30px] md:bg-gray-blue bg-[#FEFEFED1] flex gap-[23px] md:overflow-visible w-[calc(100%_+_38px)] overflow-scroll items-center self-start max-md:shadow-sm">
           <TestimonialCard

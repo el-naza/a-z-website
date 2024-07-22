@@ -7,6 +7,7 @@ import {
   ReactNode,
   TextareaHTMLAttributes,
 } from "react";
+import Marquee from "./animata/container/marquee";
 
 export function li({ children }: Readonly<{ children: ReactNode }>) {
   return <li>{children}</li>;
@@ -295,64 +296,128 @@ export function WordingItem({
 
 export function WhatsappReviews() {
   return (
-    <div className="flex gap-8">
-      <Image
-        alt="review"
-        src="/whatsapp-reviews/1.jpeg"
-        width={320}
-        height={1000}
-        className="rounded-[10px]"
-        objectFit="cover"
-      />
-      <Image
-        alt="review"
-        src="/whatsapp-reviews/2.jpeg"
-        width={300}
-        height={1000}
-        objectFit="cover"
-        className="rounded-[10px]"
-      />
-      <Image
-        alt="review"
-        src="/whatsapp-reviews/3.jpeg"
-        width={300}
-        height={1000}
-        className="rounded-[10px]"
-        objectFit="cover"
-      />
-      <Image
-        alt="review"
-        src="/whatsapp-reviews/4.jpeg"
-        width={300}
-        height={1000}
-        className="rounded-[10px]"
-        objectFit="cover"
-      />
-      <Image
-        alt="review"
-        src="/whatsapp-reviews/5.jpeg"
-        width={300}
-        height={1000}
-        className="rounded-[10px]"
-        objectFit="cover"
-      />
-      <Image
-        alt="review"
-        src="/whatsapp-reviews/6.jpeg"
-        width={300}
-        height={1000}
-        className="rounded-[10px]"
-        objectFit="cover"
-      />
-      <Image
-        alt="review"
-        src="/whatsapp-reviews/7.jpeg"
-        width={300}
-        height={1000}
-        objectFit="cover"
-        className="rounded-[10px]"
-      />
-      <div className="w-8 text-[#00000000]">.</div>
+    <div className="relative flex h-full max-h-96 min-h-72 w-full min-w-72 max-w-xl items-center justify-center overflow-hidden rounded-[10px] py-6 bg-white">
+      <Marquee pauseOnHover applyMask>
+        <div className="flex gap-8">
+          <Image
+            alt="review"
+            src="/whatsapp-reviews/1.jpeg"
+            width={320}
+            height={1000}
+            className="rounded-[10px]"
+            objectFit="cover"
+          />
+          <Image
+            alt="review"
+            src="/whatsapp-reviews/2.jpeg"
+            width={300}
+            height={1000}
+            objectFit="cover"
+            className="rounded-[10px]"
+          />
+          <Image
+            alt="review"
+            src="/whatsapp-reviews/3.jpeg"
+            width={450}
+            height={1000}
+            className="rounded-[10px]"
+          />
+          <Image
+            alt="review"
+            src="/whatsapp-reviews/4.jpeg"
+            width={450}
+            height={1000}
+            className="rounded-[10px]"
+            objectFit="cover"
+          />
+          <Image
+            alt="review"
+            src="/whatsapp-reviews/5.jpeg"
+            width={300}
+            height={1000}
+            className="rounded-[10px]"
+            objectFit="cover"
+          />
+          <Image
+            alt="review"
+            src="/whatsapp-reviews/6.jpeg"
+            width={300}
+            height={1000}
+            className="rounded-[10px]"
+            objectFit="cover"
+          />
+          <Image
+            alt="review"
+            src="/whatsapp-reviews/7.jpeg"
+            width={300}
+            height={1000}
+            objectFit="cover"
+            className="rounded-[10px]"
+          />
+          <div className=" w-0.5 text-[#00000000]">.</div>
+        </div>
+      </Marquee>
     </div>
   );
+  // return (
+  //   <div className="flex gap-8">
+  //     <Image
+  //       alt="review"
+  //       src="/whatsapp-reviews/1.jpeg"
+  //       width={320}
+  //       height={1000}
+  //       className="rounded-[10px]"
+  //       objectFit="cover"
+  //     />
+  //     <Image
+  //       alt="review"
+  //       src="/whatsapp-reviews/2.jpeg"
+  //       width={300}
+  //       height={1000}
+  //       objectFit="cover"
+  //       className="rounded-[10px]"
+  //     />
+  //     <Image
+  //       alt="review"
+  //       src="/whatsapp-reviews/3.jpeg"
+  //       width={300}
+  //       height={1000}
+  //       className="rounded-[10px]"
+  //       objectFit="cover"
+  //     />
+  //     <Image
+  //       alt="review"
+  //       src="/whatsapp-reviews/4.jpeg"
+  //       width={300}
+  //       height={1000}
+  //       className="rounded-[10px]"
+  //       objectFit="cover"
+  //     />
+  //     <Image
+  //       alt="review"
+  //       src="/whatsapp-reviews/5.jpeg"
+  //       width={300}
+  //       height={1000}
+  //       className="rounded-[10px]"
+  //       objectFit="cover"
+  //     />
+  //     <Image
+  //       alt="review"
+  //       src="/whatsapp-reviews/6.jpeg"
+  //       width={300}
+  //       height={1000}
+  //       className="rounded-[10px]"
+  //       objectFit="cover"
+  //     />
+  //     <Image
+  //       alt="review"
+  //       src="/whatsapp-reviews/7.jpeg"
+  //       width={300}
+  //       height={1000}
+  //       objectFit="cover"
+  //       className="rounded-[10px]"
+  //     />
+  //     <div className="w-8 text-[#00000000]">.</div>
+  //   </div>
+  // );
 }
