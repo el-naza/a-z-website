@@ -130,22 +130,22 @@ export function Faqs() {
         Find the answers you need and get started today!
       </h5>
       <div className="w-full flex flex-col gap-[12px] px-[7.5px]">
-        <Accordion  type="single" collapsible className="w-full">
-          <AccordionItem value={"item 1"}>
-            <AccordionTrigger>What services do you offer?</AccordionTrigger>
-            <AccordionContent>Some answer to the question asked above</AccordionContent>
+        <Accordion type="single" collapsible className="w-full">
+          <AccordionItem value={"item 1"} className="border border-gray-300 bg-[#EDF3F3] w-[880px] h-[104px] rounded-[12px] p-[12px] mb-[12px]">
+            <AccordionTrigger className="text-[24px] font-[700] line-height-[28.8px]">What services do you offer?</AccordionTrigger>
+            <AccordionContent className="text-[16] text-[#413E3E] font-[400]">Some answer to the question asked above</AccordionContent>
           </AccordionItem>
-          <AccordionItem value={"item 2"}>
-            <AccordionTrigger>What are the benefits of using your services?</AccordionTrigger>
-            <AccordionContent>Some answer to the question asked above</AccordionContent>
+          <AccordionItem value={"item 2"} className="border border-gray-300 bg-[#EDF3F3] w-[880px] h-[104px] rounded-[12px] p-[12px] mb-[12px]">
+            <AccordionTrigger className="text-[24px] font-[700] line-height-[28.8px]">What are the benefits of using your services?</AccordionTrigger>
+            <AccordionContent className="text-[16] text-[#413E3E] font-[400]">Some answer to the question asked above</AccordionContent>
           </AccordionItem>
-          <AccordionItem value={"item 3"}>
-            <AccordionTrigger>How do I get started with your services?</AccordionTrigger>
-            <AccordionContent>Some answer to the question asked above</AccordionContent>
+          <AccordionItem value={"item 3"} className="border border-gray-300 bg-[#EDF3F3] w-[880px] h-[104px] rounded-[12px] p-[12px]  mb-[12px]">
+            <AccordionTrigger className="text-[24px] font-[700] line-height-[28.8px]">How do I get started with your services?</AccordionTrigger>
+            <AccordionContent className="text-[16] text-[#413E3E] font-[400]">Some answer to the question asked above</AccordionContent>
           </AccordionItem>
-          <AccordionItem value={"item 4"}>
-            <AccordionTrigger>Who are your services geared towards to?</AccordionTrigger>
-            <AccordionContent>Some answer to the question asked above</AccordionContent>
+          <AccordionItem value={"item 4"} className="border border-gray-300 bg-[#EDF3F3] w-[880px] h-[104px] rounded-[12px] p-[12px]  mb-[12px]">
+          <AccordionTrigger className="text-[24px] font-[700] line-height-[28.8px]">Who are your services geared towards to?</AccordionTrigger>
+            <AccordionContent className="text-[16] text-[#413E3E] font-[400]">Some answer to the question asked above</AccordionContent>
           </AccordionItem>
         </Accordion>
       </div>
