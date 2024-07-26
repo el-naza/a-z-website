@@ -1,6 +1,8 @@
 /* eslint-disable react/no-unescaped-entities */
 import Image from "next/image";
 import { InputHTMLAttributes, ReactNode, TextareaHTMLAttributes } from "react";
+import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/components/ui/accordion"
+
 
 export function li({ children }: Readonly<{ children: ReactNode }>) {
   return <li>{children}</li>;
@@ -122,61 +124,60 @@ export function CallToApply() {
 
 export function Faqs() {
   return (
-    <div className=" relative flex gap-[24px] m-auto md:mb-[230px] mb-[60px] max-w-[895px] flex-col items-center">
-      <h2 className="text-primary  text-center">Frequently Asked Questions</h2>
-      <h5 className="font-normal text-center m">
+    <div className="relative flex gap-[24px] m-auto md:mb-[230px] mb-[60px] max-w-[895px] flex-col items-center">
+      <h2 className="text-primary text-center">Frequently Asked Questions</h2>
+      <h5 className="font-normal text-center">
         Find the answers you need and get started today!
       </h5>
       <div className="w-full flex flex-col gap-[12px] px-[7.5px]">
-        <FaqItem
-          faq="What services do you offer?"
-          answer="Some answer to the question asked above"
-        ></FaqItem>
-        <FaqItem
-          faq="What are the benefits of using your services?"
-          answer="Some answer to the question asked above"
-        ></FaqItem>
-        <FaqItem
-          faq="How do I get started with your services?"
-          answer="Some answer to the question asked above"
-        ></FaqItem>
-        <FaqItem
-          faq="Who are your services geared towards to?"
-          answer="Some answer to the question asked above"
-        ></FaqItem>
+        <Accordion  type="single" collapsible className="w-full">
+          <AccordionItem value={"item 1"}>
+            <AccordionTrigger>What services do you offer?</AccordionTrigger>
+            <AccordionContent>Some answer to the question asked above</AccordionContent>
+          </AccordionItem>
+          <AccordionItem value={"item 2"}>
+            <AccordionTrigger>What are the benefits of using your services?</AccordionTrigger>
+            <AccordionContent>Some answer to the question asked above</AccordionContent>
+          </AccordionItem>
+          <AccordionItem value={"item 3"}>
+            <AccordionTrigger>How do I get started with your services?</AccordionTrigger>
+            <AccordionContent>Some answer to the question asked above</AccordionContent>
+          </AccordionItem>
+          <AccordionItem value={"item 4"}>
+            <AccordionTrigger>Who are your services geared towards to?</AccordionTrigger>
+            <AccordionContent>Some answer to the question asked above</AccordionContent>
+          </AccordionItem>
+        </Accordion>
       </div>
-
-     
-        
     </div>
   );
 }
 
-export function FaqItem({
-  faq,
-  answer,
-  ...props
-}: Readonly<{
-  faq: string;
-  answer: string;
-  children?: React.ReactNode;
-}>) {
-  return (
-    <div className="flex bg-gray-blue p-[20px] md:p-[32px] rounded-[12px] justify-between gap-5">
-      <div className="flex flex-col gap-[12px]">
-        <h5 className="max-md:font-normal">{faq}</h5>
-        <p className="tiny">{answer}</p>
-      </div>
-      <Image
-        src="/chevron.svg"
-        alt="dropdown"
-        width={25}
-        height={13.75}
-        className="max-md:w-[15px]"
-      />
-    </div>
-  );
-}
+// export function FaqItem({
+//   faq,
+//   answer,
+//   ...props
+// }: Readonly<{
+//   faq: string;
+//   answer: string;
+//   children?: React.ReactNode;
+// }>) {
+//   return (
+//     <div className="flex bg-gray-blue p-[20px] md:p-[32px] rounded-[12px] justify-between gap-5">
+//       <div className="flex flex-col gap-[12px]">
+//         <h5 className="max-md:font-normal">{faq}</h5>
+//         <p className="tiny">{answer}</p>
+//       </div>
+//       <Image
+//         src="/chevron.svg"
+//         alt="dropdown"
+//         width={25}
+//         height={13.75}
+//         className="max-md:w-[15px]"
+//       />
+//     </div>
+//   );
+// }
 
 export function ItemCard({
   className,
