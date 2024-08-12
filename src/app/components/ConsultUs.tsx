@@ -7,7 +7,8 @@ import { usePathname } from "next/navigation";
 export function ConsultUs() {
   const pathname = usePathname();
 
-  if (pathname.includes("career")) return false;
+  if (pathname.includes("career") || pathname.includes("application-form"))
+    return false;
 
   return (
     <div className="relative flex justify-center w-full">
