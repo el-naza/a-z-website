@@ -5,6 +5,7 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 
 export function ConsultUs() {
+  return false;
   // const pathname = usePathname();
   // if (pathname.includes("career") || pathname.includes("application-form"))
   //   return false;
