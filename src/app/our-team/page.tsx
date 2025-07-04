@@ -38,6 +38,11 @@ export default function OurTeam() {
             role="Operations Manager"
           />
           <TeamMemberCard
+            imgSrc="/team-members/administrator.jpeg"
+            fullName="Precious Joseph"
+            role="Administrator"
+          />
+          <TeamMemberCard
             imgSrc="/team-members/recruitment-officer.png"
             fullName="Donatus Ushie"
             role="Recruitment officer"
@@ -54,12 +59,12 @@ export default function OurTeam() {
             fullName="Taiwo Bello"
             role="Orientation officer"
           />
-          <TeamMemberCard
+          {/* <TeamMemberCard
             imgSrc="/team-members/ass-orientation-officer.png"
             imgBgColor="#C9DADA"
             fullName="Christopher Labi"
             role="Ass. Orientation officer"
-          />
+          /> */}
         </div>
       </div>
       <CallToApply />
