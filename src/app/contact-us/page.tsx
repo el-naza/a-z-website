@@ -41,6 +41,12 @@ export default function OneOnOneHomeTutoring() {
         >
           <Contact iconSrc="/whatsapp-contact.svg">+234 816 142 8680</Contact>
         </Link>
+        <Link
+          href="https://whatsapp.com/channel/0029Vb5dN6Z1noz6vRn5gi2k"
+          target="_blank"
+        >
+          <Contact iconSrc="/whatsapp-contact.svg">A-Z NEW AGE TUTORS | WhatsApp Channel</Contact>
+        </Link>
         <Link href="mailto:atoznewagetutors@gmail.com" target="_blank">
           <Contact iconSrc="/email-contact.svg">
             atoznewagetutors@gmail.com

@@ -10,10 +10,12 @@ import {
   WhatsappReviews,
 } from "./components";
 import Link from "next/link";
+import { FloatingCallButton } from "./components/FloatingCallButton";
 
 export default function Home() {
   return (
     <>
+      <FloatingCallButton />
       <section className="max-w-[1112px] m-auto mt-[28px] md:mt-[56px] md:mb-[183.44px] mb-[67.4px] md:justify-between md:items-end items-center flex max-md:flex-col justify-center ">
         <WordingItem className="max-w-[700px] max-md:text-center max-md:items-center">
           <h1>
