@@ -13,52 +13,6 @@ export function li({ children }: Readonly<{ children: ReactNode }>) {
   return <li>{children}</li>;
 }
 
-// export function ConsultUs() {
-//   return (
-//       <div className="relative flex flex-wrap bg-white gap-[60px] gap-y-[16px] md:m-auto md:mb-[147px] mb-[147px] max-w-[1010px] px-[40px] py-[32px] rounded-[74px] items-center shadow-[0px_1px_22.8px_0px_#00000012] justify-center">
-//         <div id="consult-us" className="absolute top-[-120px]"/>
-//         <Image
-//             src="/customer-care-rep.png"
-//             alt="customer care representative"
-//             width={272}
-//             height={620}
-//             className="max-md:w-[145px] max-md:h-[299px] rounded-[700px] shadow-[0px_0px_42.1px_0px_#0000001A]"
-//         />
-//         <div className="flex-1 max-md:text-center">
-//           <p className="font-anybody bg-gradient-to-r from-[#50E4ED] to-[#3492D6] text-[transparent] bg-clip-text text-[64px] leading-[76.8px] mb-[4px] max-md:text-[24px] max-md:leading-[28.8px] max-md:font-bold">
-//             Consult Us
-//           </p>
-//           <p className="mb-[20px]">
-//             Let's discuss your needs. We're
-//             <br className="md:hidden"/> here to help.
-//           </p>
-//           <div className="flex flex-col gap-[20px]">
-//             <CustomInput placeholder="Full name"/>
-//             <CustomInput type="email" placeholder="Email address"/>
-//             <CustomInput placeholder="Enter coupon"/>
-//             <CustomInput type="email" placeholder="Confirm email address"/>
-//             <CustomTextArea
-//                 name=""
-//                 id=""
-//                 // cols={30}
-//                 rows={7.2}
-//                 placeholder="Write your message here"
-//             />
-//           </div>
-//           <div className="flex flex-col pt-[16px] gap-[20px]">
-//             <Image
-//                 src="/send.svg"
-//                 alt="send"
-//                 width={80}
-//                 height={80}
-//                 className="self-end max-md:w-[60px]"
-//             />
-//             <p className="tiny text-primary2">Message Us on Whatsapp instead</p>
-//           </div>
-//         </div>
-//       </div>
-//   );
-
 const inputClasses = "bg-gray2 px-[20px] placeholder:text-gray rounded-[10px]";
 
 export function CustomInput({
@@ -108,6 +62,34 @@ export function Faqs() {
       </h5>
       <div className="w-full flex flex-col gap-[12px] px-[7.5px]">
         <FaqItem
+          faq="What exactly does A-Z New Age Tutors offer?"
+          answer="We provide personalized home and virtual tutoring for all grades. Our services cover academics, life skills, emotional growth, and special programs like summer transformation, learning pods, and parent-child learning support."
+        ></FaqItem>
+        <FaqItem
+          faq="Are your tutors trained and vetted?"
+          answer="Yes. Every tutor passes through a strict screening and training process, including academic testing, child safety checks, teaching demos, and soft skills development. We prioritize both subject mastery and learner care."
+        ></FaqItem>
+        <FaqItem
+          faq="What locations do you cover?"
+          answer="We offer in-person tutoring all round Nigeria: Lagos, Abuja, Port Harcourt, Ibadan. We also cover other parts of Nigeria on request, and our virtual programs serve families nationwide and in the Diaspora, including the UK, US, Canada, UAE, and more."
+        ></FaqItem>
+        <FaqItem
+          faq="What curriculum do you follow?"
+          answer="We support British, Nigerian, and hybrid curricula. Tutors align with your child's school syllabus or create custom learning plans based on your goals, including assessments and gap-filling strategies."
+        ></FaqItem>
+        <FaqItem
+          faq="Do you offer both group and one-on-one tutoring?"
+          answer="Yes! We offer: 1-on-1 sessions for personal lessons, Small groups (2 or more learners), Learning Pods (house-based mini bootcamps during holidays), Online clubs for skills and interactive learning."
+        ></FaqItem>
+        <FaqItem
+          faq="How do I book a tutor or join a program?"
+          answer="Simply: Chat with us on WhatsApp, Fill a short enrolment form, Schedule a free consultation call. We'll guide you through program options, pricing, and tutor matching."
+        ></FaqItem>
+        <FaqItem
+          faq="What locations do you cover?"
+          answer="We tutor learners of all ages, from early years to tertiary institutions."
+        ></FaqItem>
+        <FaqItem
           faq="What ages do you tutor?"
           answer="We tutor learners of all ages, from early years to tertiary institutions."
         ></FaqItem>
@@ -115,38 +97,13 @@ export function Faqs() {
           faq="How do you match learners with tutors?"
           answer="We carefully match tutors with learners based on their individual needs, learning style, and goals."
         ></FaqItem>
-        <div className="flex bg-gray-blue p-[20px] md:p-[32px] rounded-[12px] justify-between gap-5">
-          <div className="flex flex-col gap-[12px]">
-            <h5 className="max-md:font-normal">
-              How do I get started with your services?
-            </h5>
-            <p className="tiny">
-              Fill out our application form{" "}
-              <Link href="/application-from" className="text-[blue]">
-                here
-              </Link>
-              .
-            </p>
-          </div>
-          <Image
-            src="/chevron.svg"
-            alt="dropdown"
-            width={25}
-            height={13.75}
-            className="max-md:w-[15px]"
-          />
-        </div>
-        {/* <FaqItem
-          faq=""
-          answer={``}
-        ></FaqItem> */}
         <FaqItem
           faq="How often are tutoring sessions held?"
           answer="Tutoring sessions can be scheduled as frequently or infrequently as needed, depending on the learner's needs."
         ></FaqItem>
         <FaqItem
           faq="Do you offer any additional resources or support?"
-          answer="Yes, we offer a range of additional resources and support, including homework, study skills coaching, and test preparation."
+          answer="Yes, we offer a range of additional resources and support, including homework, study skills coaching, test preparation, and extracurricular activities."
         ></FaqItem>
       </div>
     </div>
@@ -173,7 +130,7 @@ export function FaqItem({
         alt="dropdown"
         width={25}
         height={13.75}
-        className="max-md:w-[15px]"
+        className="max-md:min-w-[15px] min-w-[25px]"
       />
     </div>
   );
@@ -359,65 +316,4 @@ export function WhatsappReviews() {
       </Marquee>
     </div>
   );
-  // return (
-  //   <div className="flex gap-8">
-  //     <Image
-  //       alt="review"
-  //       src="/whatsapp-reviews/1.jpeg"
-  //       width={320}
-  //       height={150}
-  //       className="rounded-[10px]"
-  //       objectFit="cover"
-  //     />
-  //     <Image
-  //       alt="review"
-  //       src="/whatsapp-reviews/2.jpeg"
-  //       width={300}
-  //       height={150}
-  //       objectFit="cover"
-  //       className="rounded-[10px]"
-  //     />
-  //     <Image
-  //       alt="review"
-  //       src="/whatsapp-reviews/3.jpeg"
-  //       width={300}
-  //       height={150}
-  //       className="rounded-[10px]"
-  //       objectFit="cover"
-  //     />
-  //     <Image
-  //       alt="review"
-  //       src="/whatsapp-reviews/4.jpeg"
-  //       width={300}
-  //       height={150}
-  //       className="rounded-[10px]"
-  //       objectFit="cover"
-  //     />
-  //     <Image
-  //       alt="review"
-  //       src="/whatsapp-reviews/5.jpeg"
-  //       width={300}
-  //       height={150}
-  //       className="rounded-[10px]"
-  //       objectFit="cover"
-  //     />
-  //     <Image
-  //       alt="review"
-  //       src="/whatsapp-reviews/6.jpeg"
-  //       width={300}
-  //       height={150}
-  //       className="rounded-[10px]"
-  //       objectFit="cover"
-  //     />
-  //     <Image
-  //       alt="review"
-  //       src="/whatsapp-reviews/7.jpeg"
-  //       width={300}
-  //       height={150}
-  //       objectFit="cover"
-  //       className="rounded-[10px]"
-  //     />
-  //     <div className="w-8 text-[#00000000]">.</div>
-  //   </div>
-  // );
 }
