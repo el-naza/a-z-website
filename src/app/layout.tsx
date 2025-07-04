@@ -49,10 +49,10 @@ export default function RootLayout({
         {/* <script type="module" src="https://unpkg.com/x-frame-bypass"></script> */}
       </head>
       <body
-        className={`${anybody.variable} ${ubuntu.variable} ${roboto.variable} ${inter.variable} ${ubuntu.className} text-[24px] leading-[28.8px] max-md:w-screen max-md:text-[14px] max-md:leading-[21px]`}
+        className={`${anybody.variable} ${ubuntu.variable} ${roboto.variable} ${inter.variable} ${ubuntu.className} text-[24px] leading-[28.8px] max-md:w-screen max-md:text-[14px] max-md:leading-[21px] min-h-screen flex flex-col`}
       >
         <Header />
-        <main className="mx-[38px] ">
+        <main className="mx-[38px] flex-grow">
           {children}
           <ConsultUs />
         </main>
